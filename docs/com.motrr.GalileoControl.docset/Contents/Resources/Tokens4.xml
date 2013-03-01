@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PositionControl.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PositionControl</TokenIdentifier>
+			<Abstract type="html">The PositionControl object allows you to control Galileo&apos;s rotational position for a given axis. You can access the instance through the positionControlForAxis: method of the Galileo singleton instance.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setSmallestAngleIncrement:</TokenIdentifier>
+			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/smallestAngleIncrement</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/smallestAngleIncrement</TokenIdentifier>
+			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/smallestAngleIncrement</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/smallestAngleIncrement</TokenIdentifier>
+			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/smallestAngleIncrement</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setCurrentPosition:</TokenIdentifier>
+			<Abstract type="html">The current position, in degress.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			
+			
+			<Anchor>//api/name/currentPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/currentPosition</TokenIdentifier>
+			<Abstract type="html">The current position, in degress.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			
+			
+			<Anchor>//api/name/currentPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/currentPosition</TokenIdentifier>
+			<Abstract type="html">The current position, in degress.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			
+			
+			<Anchor>//api/name/currentPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:</TokenIdentifier>
+			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/targetPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/targetPosition</TokenIdentifier>
+			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/targetPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/targetPosition</TokenIdentifier>
+			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/targetPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setAtTargetPosition:</TokenIdentifier>
+			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/atTargetPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/isAtTargetPosition</TokenIdentifier>
+			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/atTargetPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/atTargetPosition</TokenIdentifier>
+			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/atTargetPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/resetOriginToCurrentPosition</TokenIdentifier>
+			<Abstract type="html">Resets the origin to the current position.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetOriginToCurrentPosition</Declaration>
+			
+			
+			<Anchor>//api/name/resetOriginToCurrentPosition</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
+			<Abstract type="html">Move Galileo to a new position.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTargetPosition:(double)newTargetPosition notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newTargetPosition</Name>
+					<Abstract type="html">The target position, in degrees, in relation to the origin.</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate to be notified on completion or preemption.</Abstract>
+				</Parameter><Parameter>
+					<Name>waitUntilStationary</Name>
+					<Abstract type="html">If TRUE the call blocks untill the accessory has stopped moving.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTargetPosition:notifyDelegate:waitUntilStationary:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/incrementTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
+			<Abstract type="html">Rotate Galileo clockwise to a new position, relative to it&apos;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>- (void)incrementTargetPosition:(double)amount notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>amount</Name>
+					<Abstract type="html">The amount, in degrees, to increment the target position by.</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate to be notified on completion or preemption.</Abstract>
+				</Parameter><Parameter>
+					<Name>waitUntilStationary</Name>
+					<Abstract type="html">If TRUE the call blocks untill the accessory has stopped moving.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/incrementTargetPosition:notifyDelegate:waitUntilStationary:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+	</File>
+</Tokens>

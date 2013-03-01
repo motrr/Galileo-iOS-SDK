@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GalileoDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GalileoDelegate</TokenIdentifier>
+			<Abstract type="html">This protocol defines an interface for delegates of a Galileo object to respond to connection and disconnection events.</Abstract>
+			<DeclaredIn>GalileoDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GalileoDelegate/galileoDidConnect</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when a Galileo accessory is successfully connected.</Abstract>
+			<DeclaredIn>GalileoDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)galileoDidConnect</Declaration>
+			
+			
+			<Anchor>//api/name/galileoDidConnect</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GalileoDelegate/galileoDidDisconnect</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when a previously connected Galileo accessory is disconnected.</Abstract>
+			<DeclaredIn>GalileoDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)galileoDidDisconnect</Declaration>
+			
+			
+			<Anchor>//api/name/galileoDidDisconnect</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+	</File>
+</Tokens>

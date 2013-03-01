@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PositionControlDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PositionControlDelegate</TokenIdentifier>
+			<Abstract type="html">This protocol defines an interface for delegates of a PositionControl object to be notified when a movement control command has either completed or been overridden by another command.</Abstract>
+			<DeclaredIn>PositionControlDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PositionControlDelegate/controlDidReachTargetPosition</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when Galileo reaches the specified target position.</Abstract>
+			<DeclaredIn>PositionControlDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)controlDidReachTargetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/controlDidReachTargetPosition</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PositionControlDelegate/controlDidOverrideMovement</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when the target position is updated before the old position is reached.</Abstract>
+			<DeclaredIn>PositionControlDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)controlDidOverrideMovement</Declaration>
+			
+			
+			<Anchor>//api/name/controlDidOverrideMovement</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+	</File>
+</Tokens>

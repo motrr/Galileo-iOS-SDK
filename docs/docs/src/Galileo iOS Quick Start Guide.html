@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Galileo iOS Quick Start Guide</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../../css/stylesPrint.css" />	
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">GalileoControl </a></h1>
+				<a id="developerHome" href="../index.html">Motrr</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode" id="pageTitleHeader">Galileo iOS Quick Start Guide</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<a title="Galileo iOS Quick Start Guide" name="top"></a>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Galileo iOS Quick Start Guide" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../../index.html">Index</a></li>
+	<li><a href="../../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Galileo iOS Quick Start Guide</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					<p>Welcome to the Galileo iOS Quick Start Guide for developers. The following information should help you get started with building Galileo compatible applications on the iOS platform. The examples in this guide were built using Xcode 4.6 and have been tested with iOS SDK 5.0.1 and 6.1. Comments, corrections and suggestions should be sent to <a href="mailto:dev@motrr.com">dev@motrr.com</a>.</p>
+
+<p>First time developers should read through Apple&rsquo;s introductory guide on iOS app development, <a href="http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/Introduction.html">Start Developing iOS Apps Today</a>. Experienced developers may want to take a look at the <a href="#sample">sample projects</a> for more advanced uses of the SDK.</p>
+
+<h2>Table of Contents</h2>
+
+<p><a href="#resources">Resources</a><br/>
+<a href="#installing">Installing the SDK</a><br/>
+<a href="#configuring">Configuring your XCode project</a><br/>
+<a href="#connecting">Connecting to Galileo</a><br/>
+<a href="#moving">Moving Galileo</a></p>
+
+<p><a name="resources"/></a></p>
+
+<h2>Resources</h2>
+
+<h3>Documentation</h3>
+
+<p>The full index of class references can be viewed on the <a href="../../index.html">GalileoControl</a> index page. In this guide you will make use of the following classes:</p>
+
+<ul>
+<li><a href="../../Classes/Galileo.html"><code>Galileo</code></a> &ndash; Defines the gateway singleton object for connecting to Galileo and accessing motion controllers.</li>
+<li><a href="../../Protocols/GalileoDelegate.html"><code>GalileoDelegate</code></a> &ndash; Delegate protocol for notification of connection and disconnection events.</li>
+<li><a href="../../Classes/PositionControl.html"><code>PositionControl</code></a> &ndash; Control Galileo by moving to a specified position.</li>
+<li><a href="../../Classes/VelocityControl.html"><code>VelocityControl</code></a> &ndash; Control Galileo by setting angular velocity.</li>
+</ul>
+
+
+<h3>Community</h3>
+
+<p>A developer blog and forum will be released shortly, check back soon at our <a href="http://dev.motrr.com">developer portal</a>. Until then feel free to email comments and questions to <a href="mailto:dev@motrr.com">dev@motrr.com</a>.</p>
+
+<p><a name="sample"/></a></p>
+
+<h3>Sample projects</h3>
+
+<ul>
+<li><a href="https://github.com/motrr/HelloWorldGalileo">HelloWorldGalileo</a> &ndash; Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.</li>
+</ul>
+
+
+<p><a name="installing"/></a></p>
+
+<h2>Installing the SDK</h2>
+
+<p>The SDK can be downloaded and added to your project manually. Git users can create a git submodule to stay up to date with future releases.</p>
+
+<h3>Manual installation</h3>
+
+<p>Installation is as easy as adding the SDK folder to you project directory.</p>
+
+<ul>
+<li>Download the SDK archive either in <a href="https://github.com/motrr/Galileo-iOS-SDK/zipball/master">.zip</a> format or <a href="https://github.com/motrr/Galileo-iOS-SDK/tarball/master">.tar.gz</a>.</li>
+<li>Extract the archive to somewhere appropriate in your project direcory. For this guide you will extract the contents of the archive to a folder called Galileo-iOS-SDK, located in the root of the project directory.</li>
+</ul>
+
+
+<h3>Installing as a git submodule</h3>
+
+<p>This method assumes you are using git for source control and have a git repository containing your Xcode project already set up.</p>
+
+<ul>
+<li><p>Navigate to the root of you git repository and execute the following commands. This will create and initialise the submodule and commit the changes.</p>
+
+<pre><code> git submodule add git@github.com:motrr/Galileo-iOS-SDK.git
+ git commit -m "Added Galileo iOS SDK submodule"
+</code></pre></li>
+<li><p>At some point in the future you may wish to update you project&rsquo;s copy of the SDK to the latest version. To do this, again navigate to the root directory and execture the following.</p>
+
+<pre><code> cd Galileo-iOS-SDK
+ git pull
+ cd ..
+ git add Galileo-iOS-SDK
+ git commit -m "Updated Galileo iOS SDK submodule"
+</code></pre></li>
+</ul>
+
+
+<p><a name="configuring"/></a></p>
+
+<h2>Configuring your XCode project</h2>
+
+<p>Your Xcode project will need to be configured to include the GalileoControl framework and its dependencies. You will also need to declare the use of Galileo&rsquo;s External Accessory protocols.</p>
+
+<h3>Adding the GalileoControl framework</h3>
+
+<ol>
+<li><p>Locate the GalileoControl.framework directory within your SDK folder. Drag and drop the .framework directory into the Frameworks group of your Xcode project.</p></li>
+<li><p>When asked to confirm, ensure that &ldquo;Copy items into destination group&rsquo;s folder&rdquo; is not selected.</p></li>
+</ol>
+
+
+<!--
+ [add-framework1]: add-framework1.png
+![Adding the GalileoControl framework (step 1)][add-framework1]
+-->
+
+
+<p><figure class="figure">
+<figcaption><strong>Figure 1</strong>&nbsp;&nbsp;Adding the GalileoControl framework</figcaption>
+<img src="add-framework.png" alt="Adding the GalileoControl framework" width="600">
+</figure></p>
+
+<h3>Adding additional dependencies</h3>
+
+<p>The GalileoControl framework also depends on the following Apple frameworks and libraries.</p>
+
+<ul>
+<li>libmxl2.dylib</li>
+<li>ExternalAccessory.framework</li>
+</ul>
+
+
+<p>Adding them to your project can be done using the following steps.</p>
+
+<ol>
+<li>In the project editor, select the target to which you want to add a library or framework.</li>
+<li>Click Build Phases at the top of the project editor.</li>
+<li>Open the Link Binary With Libraries section.</li>
+<li>Click the Add (+) button to add a library or framework.</li>
+<li>Select a library or framework from the list and click Add.</li>
+</ol>
+
+
+<p><figure class="figure">
+<figcaption><strong>Figure 2</strong>&nbsp;&nbsp;Adding GalileoControl dependencies</figcaption>
+<img src="frameworks.png" alt="Adding GalileoControl dependencies" width="600">
+</figure></p>
+
+<p>See the Apple documentation on <a href="https://developer.apple.com/library/ios/#recipes/xcode_help-project_editor/Articles/AddingaLibrarytoaTarget.html%23//apple_ref/doc/uid/TP40010155-CH17-SW1">Linking to a Library or Framework</a> for more details.</p>
+
+<h3>Declaring External Accessory protocols</h3>
+
+<p>Motrr defines two External Accessory protocols, both of which must be declared in you project&rsquo;s Info.plist file under the <code>Supported external accessory protocols</code> key.</p>
+
+<ul>
+<li><code>com.motrr.galileo</code></li>
+<li><code>com.motrr.boot</code></li>
+</ul>
+
+
+<p>Configure your Info.plist with the following steps.</p>
+
+<ol>
+<li>In the project explorer, locate you project&rsquo;s Info.plist file. It will be prefixed with project&rsquo;s name and is typically located in the Supporting Files group.</li>
+<li>In the property list editor, hold the pointer over an entry and click the Add (+) button.</li>
+<li>Choose the key name <code>Supported external accessory protocols</code> from the pop-up menu.</li>
+<li>Add two entries for the Motrr protocols <code>com.motrr.galileo</code> and <code>com.motrr.boot</code>.</li>
+</ol>
+
+
+<p><figure class="figure">
+<figcaption><strong>Figure 3</strong>&nbsp;&nbsp;Configuring your project&rsquo;s Info.plist</figcaption>
+<img src="plist.png" alt="Configuring your project's Info.plist" width="600">
+</figure></p>
+
+<p><a name="connecting"/></a></p>
+
+<h2>Connecting to Galileo</h2>
+
+<p>Connecting to Galileo is performed asynchronously. Notification of a succesful connection is provided using the <a href="../../Protocols/GalileoDelegate.html"><code>GalileoDelegate</code></a> protocol whilst initiating a connection is done using the <a href="../../Classes/Galileo.html"><code>Galileo</code></a> shared instance.</p>
+
+<ul>
+<li><p>To begin with, ensure you include the <code>GalileoControl.h</code> header in any source files which make use of the GalileoControl framework.</p>
+
+<pre><code> #import &lt;GalileoControl/GalileoControl.h&gt;
+</code></pre></li>
+<li><p>To initiate a connection, access the shared Galileo instance and call the <code>waitForConnection</code> method. Typically you would also set the delegate prior to this call.</p>
+
+<pre><code>[Galileo sharedGalileo].delegate = self;
+[[Galileo sharedGalileo] waitForConnection];
+</code></pre></li>
+<li><p>In order to be notified when a connection is established you must also implement the <a href="../../Protocols/GalileoDelegate.html"><code>GalileoDelegate</code></a> protocol. The following code snippet alerts the user when Galileo connects by implementing the <code>galileoDidConnect</code> method.</p>
+
+<pre><code> - (void) galileoDidConnect
+ {
+     UIAlertView* galileoConnectedAlert = [[UIAlertView alloc] initWithTitle:@"Galileo connected!"
+                                                                     message:nil
+                                                                    delegate:nil
+                                                           cancelButtonTitle:@"OK"
+                                                           otherButtonTitles:nil];
+     [galileoConnectedAlert show];
+ }
+</code></pre></li>
+<li><p>It is also normally a good idea to handle Galileo disconnecting in the event that the device is removed from the accessory or runs out of battery. A typical reaction might be to start waiting for the next connection, amongst other things.</p>
+
+<pre><code>  - (void) galileoDidDisconnect
+ {
+     [[Galileo sharedGalileo] waitForConnection];
+ }
+</code></pre></li>
+</ul>
+
+
+<p><a name="moving"/></a></p>
+
+<h2>Moving Galileo</h2>
+
+<p>Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the <a href="../../Classes/Galileo.html"><code>Galileo</code></a> shared instance.</p>
+
+<ul>
+<li><p>An instance of <a href="../../Classes/PositionControl.html"><code>PositionControl</code></a> is obtained by calling <code>positionControlForAxis:</code>. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.</p>
+
+<pre><code> - (void) galileoDidConnect
+ { 
+     PositionControl* panPositionControl = [[Galileo sharedGalileo] positionControlForAxis:GalileoControlAxisPan];
+     [panPositionControl incrementTargetPosition:90.0 notifyDelegate:nil waitUntilStationary:NO];
+ }
+</code></pre></li>
+<li><p>Velocity control is performed in a similar fasion, using an instance of <code>VelocityControl</code>. The following example starts Galileo rotating the phone around it&rsquo;s tilt axis at 100 degrees per second.</p>
+
+<pre><code> VelocityControl* tiltVelocityControl = [[Galileo sharedGalileo] velocityControlForAxis:GalileoControlAxisTilt];
+ [tiltVelocityControl setTargetVelocity:100.0];
+</code></pre></li>
+<li><p>The library will attempt to switch control modes automatically, however using more than one mode for a single axis requires explicitly instructing the <a href="../../Classes/Galileo.html"><code>Galileo</code></a> shared instance to switch modes using the <code>selectMode:forAxis:</code> method.</p>
+
+<pre><code>  GalileoControlAxis axis = GalileoControlAxisPan;
+ //
+ VelocityControl* tiltVelocityControl = [[Galileo sharedGalileo] velocityControlForAxis:axis];
+ [[Galileo sharedGalileo] selectMode:GalileoModeVelocityControl forAxis:axis];
+ [tiltVelocityControl setTargetVelocity:100.0];
+ //
+ PositionControl* tiltPositionControl = [[Galileo sharedGalileo] positionControlForAxis:axis];
+ [[Galileo sharedGalileo] selectMode:GalileoModePositionControl forAxis:axis];
+ [tiltPositionControl incrementTargetPosition:-90 notifyDelegate:nil waitUntilStationary:NO];
+</code></pre></li>
+</ul>
+
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-02-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

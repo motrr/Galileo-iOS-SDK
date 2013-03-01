@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/FirmwareManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/FirmwareManagerDelegate</TokenIdentifier>
+			<Abstract type="html">This protocol defines an interface for delegates of a FirmwareManager object to be notified of the result of a firmware update check and the result of a firmware update application.</Abstract>
+			<DeclaredIn>FirmwareManagerDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FirmwareManagerDelegate/checkForUpdateComplete:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate if a firmware update is or isn&apos;t available for the connected accessory.</Abstract>
+			<DeclaredIn>FirmwareManagerDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)checkForUpdateComplete:(BOOL)isUpdateAvailable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isUpdateAvailable</Name>
+					<Abstract type="html">True if a firmware version more recent that the current version was found and downloaded succesfully. False otherwise.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/checkForUpdateComplete:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FirmwareManagerDelegate/performUpdateComplete:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate if the firmware update for the connected accessory was performed succesfuly.</Abstract>
+			<DeclaredIn>FirmwareManagerDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)performUpdateComplete:(BOOL)wasUpdateSuccessful</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>wasUpdateSuccessful</Name>
+					<Abstract type="html">True if a firmware update was successfully applied. False otherwise.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performUpdateComplete:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="docs/src/Galileo iOS Quick Start Guide.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/doc/Galileo iOS Quick Start Guide</TokenIdentifier>
+			<Abstract type="html">Welcome to the Galileo iOS Quick Start Guide for developers. The following information should help you get started with building Galileo compatible applications on the iOS platform. The examples in this guide were built using Xcode 4.6 and have been tested with iOS SDK 5.0.1 and 6.1. Comments, corrections and suggestions should be sent to dev@motrr.com.</Abstract>
+			<DeclaredIn>Galileo iOS Quick Start Guide-template.markdown</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>GalileoControl</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				<Node type="folder">
+					<Name>Programming Guides</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		<Node id="1">
+			<Name>Galileo iOS Quick Start Guide</Name>
+			<Path>docs/src/Galileo iOS Quick Start Guide.html</Path>
+		</Node>
+		
+		<Node id="2">
+			<Name>FirmwareManager</Name>
+			<Path>Classes/FirmwareManager.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>Galileo</Name>
+			<Path>Classes/Galileo.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>PositionControl</Name>
+			<Path>Classes/PositionControl.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>VelocityControl</Name>
+			<Path>Classes/VelocityControl.html</Path>
+		</Node>
+		
+		
+		<Node id="6">
+			<Name>FirmwareManagerDelegate</Name>
+			<Path>Protocols/FirmwareManagerDelegate.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>GalileoDelegate</Name>
+			<Path>Protocols/GalileoDelegate.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>PositionControlDelegate</Name>
+			<Path>Protocols/PositionControlDelegate.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>VelocityControlDelegate</Name>
+			<Path>Protocols/VelocityControlDelegate.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>
