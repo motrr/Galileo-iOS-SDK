@@ -96,42 +96,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setBatteryLevelPercent:</TokenIdentifier>
-			<Abstract type="html">The current battery level as a percentage of total capacity.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
-			
-			
-			<Anchor>//api/name/batteryLevelPercent</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/batteryLevelPercent</TokenIdentifier>
-			<Abstract type="html">The current battery level as a percentage of total capacity.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
-			
-			
-			<Anchor>//api/name/batteryLevelPercent</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/batteryLevelPercent</TokenIdentifier>
-			<Abstract type="html">The current battery level as a percentage of total capacity.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
-			
-			
-			<Anchor>//api/name/batteryLevelPercent</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setConnectedToPowerSource:</TokenIdentifier>
 			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
 			<DeclaredIn>Galileo.h</DeclaredIn>			
