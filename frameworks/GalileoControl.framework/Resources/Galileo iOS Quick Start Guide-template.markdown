@@ -29,6 +29,8 @@ A developer blog and forum will be released shortly, check back soon at our [dev
 ### Sample projects
 
  * [HelloWorldGalileo](https://github.com/motrr/HelloWorldGalileo) - Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.
+  
+ * [UpdateGalileo](https://github.com/motrr/UpdateGalileo) - Check for new firmware updates and apply them over the air to Galileo.
 
 <a name="installing"/></a>
 ## Installing the SDK
