@@ -22,3 +22,5 @@ You may also download the framework docset for installing in Xcode in either [.z
 Our sample projects should help you make more advanced use of the API. More coming soon!
 
  * [HelloWorldGalileo](https://github.com/motrr/HelloWorldGalileo) - Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.
+ 
+ * [UpdateGalileo](https://github.com/motrr/UpdateGalileo) - Check for new firmware updates and apply them over the air to Galileo.
