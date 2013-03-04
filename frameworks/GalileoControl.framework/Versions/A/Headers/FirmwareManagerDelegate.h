@@ -20,6 +20,8 @@
  */
 - (void) checkForUpdateComplete: (BOOL) isUpdateAvailable;
 
+@optional
+
 /** Notifies the delegate if the firmware update for the connected accessory was performed succesfuly.
   @param wasUpdateSuccessful True if a firmware update was successfully applied. False otherwise.
  */
