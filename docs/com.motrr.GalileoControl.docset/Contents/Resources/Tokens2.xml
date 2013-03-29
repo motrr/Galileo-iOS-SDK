@@ -12,62 +12,19 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/setDelegate:</TokenIdentifier>
-			<Abstract type="html">The delegate of the FirmwareManager object.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;FirmwareManagerDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate of the FirmwareManager object.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;FirmwareManagerDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/FirmwareManager/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate of the FirmwareManager object.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;FirmwareManagerDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/checkForUpdate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/checkForUpdateOnCompletion:</TokenIdentifier>
 			<Abstract type="html">Check for a new version of Galileo&apos;s firmware.</Abstract>
 			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
 			
-			<Declaration>- (void)checkForUpdate</Declaration>
+			<Declaration>- (void)checkForUpdateOnCompletion:(void ( ^ ) ( ))completionBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">Code block that is to be called when the update check is complete.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/checkForUpdate</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/promptUserToInstallUpdate</TokenIdentifier>
-			<Abstract type="html">Prompt user to install a firmware update to Galileo.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)promptUserToInstallUpdate</Declaration>
-			
-			
-			<Anchor>//api/name/promptUserToInstallUpdate</Anchor>
+			<Anchor>//api/name/checkForUpdateOnCompletion:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

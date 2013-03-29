@@ -6,45 +6,20 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "FirmwareManagerDelegate.h"
-
-@class MTFirmwareVersion;
 
 @interface FirmwareManager : NSObject
-
-
-///---------------------------------------------------------------------------------------
-/// @name Setting and Getting the Delegate
-///---------------------------------------------------------------------------------------
-
-/** The delegate of the FirmwareManager object.
- @discussion  The delegate must adopt the FirmwareManagerDelegate protocol. The delegate is not retained.
- */
-@property (nonatomic, assign) id<FirmwareManagerDelegate> delegate;
-
 
 ///---------------------------------------------------------------------------------------
 /// @name Checking for firmware updates
 ///---------------------------------------------------------------------------------------
 
 /** Check for a new version of Galileo's firmware.
- @discussion  This requires an internet connection and for Galileo to be connected. If a firmware update is available it will be downloaded and prepared for installation. The result of the update check can be obtained by implementing the `FirmwareManagerDelegate` protocol and setting the delegate property.
+  @param completionBlock Code block that is to be called when the update check is complete.
+ @discussion  This requires an internet connection and for Galileo to be connected. If a firmware update is available then the user will be prompted to install it using the motrr LAUNCH app. If the motrr LAUNCH app isn't installed, they will instead be prompted to install it from the Apple App Store. Otherwise, the motrr LAUNCH app will be launched and the user will be taken through the steps required to update Galileo's firmware.
+ 
+    Note that if the user launches either the Apple App Store or the motrr LAUNCH app then there is no guarantee that completionBlock will be called. 
  */
-- (void) checkForUpdate;
-
-
-///---------------------------------------------------------------------------------------
-/// @name Applying firmware updates
-///---------------------------------------------------------------------------------------
-
-/** Prompt user to install a firmware update to Galileo.
- @discussion  This method requires `checkForNewVersion` to have been called and for an update to be available, as indicated by the `newUpdateAvailable:` method being called on the delegate property. This will prompt the user to install the firmware update. This will halt all Galileo motion control until the update process is either complete or has been cancelled. It is vitally important that the user does not disconect the phone from Galileo whilst updating the firmware as this could damage Galileo irrecoverably.
- */
-- (void) promptUserToInstallUpdate;
-
-//- (void) getAvailableFirmware;
-
-//- (void) forceFirmwareUpdate: (FirmwareVersion*) firmwareVersion;
+- (void) checkForUpdateOnCompletion:(void (^)()) completionBlock;
 
 
 
