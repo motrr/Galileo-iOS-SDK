@@ -108,17 +108,16 @@ See the Apple documentation on [Linking to a Library or Framework](https://devel
 
 ### Declaring External Accessory protocols
 
-Motrr defines two External Accessory protocols, both of which must be declared in you project's Info.plist file under the `Supported external accessory protocols` key. 
+motrr defines one External Accessory protocols which must be declared in you project's Info.plist file under the `Supported external accessory protocols` key.
 
  - `com.motrr.galileo`
- - `com.motrr.boot`
 
 Configure your Info.plist with the following steps.
 
  1. In the project explorer, locate you project's Info.plist file. It will be prefixed with project's name and is typically located in the Supporting Files group.
  2. In the property list editor, hold the pointer over an entry and click the Add (+) button.
  3. Choose the key name `Supported external accessory protocols` from the pop-up menu.
- 4. Add two entries for the Motrr protocols `com.motrr.galileo` and `com.motrr.boot`.
+ 4. Add an entry for the motrr protocol `com.motrr.galileo`.
 
 <figure class="figure">
 <figcaption><strong>Figure 3</strong>&nbsp;&nbsp;Configuring your project's Info.plist</figcaption>

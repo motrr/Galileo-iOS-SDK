@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/GalileoDelegate.html">
+	<File path="Protocols/PositionControlDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/GalileoDelegate</TokenIdentifier>
-			<Abstract type="html">This protocol defines an interface for delegates of a Galileo object to respond to connection and disconnection events.</Abstract>
-			<DeclaredIn>GalileoDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/PositionControlDelegate</TokenIdentifier>
+			<Abstract type="html">This protocol defines an interface for delegates of a PositionControl object to be notified when a movement control command has either completed or been overridden by another command.</Abstract>
+			<DeclaredIn>PositionControlDelegate.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GalileoDelegate/galileoDidConnect</TokenIdentifier>
-			<Abstract type="html">Sent to the delegate when a Galileo accessory is successfully connected.</Abstract>
-			<DeclaredIn>GalileoDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/PositionControlDelegate/controlDidReachTargetPosition</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when Galileo reaches the specified target position.</Abstract>
+			<DeclaredIn>PositionControlDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)galileoDidConnect</Declaration>
+			<Declaration>- (void)controlDidReachTargetPosition</Declaration>
 			
 			
-			<Anchor>//api/name/galileoDidConnect</Anchor>
+			<Anchor>//api/name/controlDidReachTargetPosition</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GalileoDelegate/galileoDidDisconnect</TokenIdentifier>
-			<Abstract type="html">Sent to the delegate when a previously connected Galileo accessory is disconnected.</Abstract>
-			<DeclaredIn>GalileoDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/PositionControlDelegate/controlDidOverrideMovement</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when the target position is updated before the old position is reached.</Abstract>
+			<DeclaredIn>PositionControlDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)galileoDidDisconnect</Declaration>
+			<Declaration>- (void)controlDidOverrideMovement</Declaration>
 			
 			
-			<Anchor>//api/name/galileoDidDisconnect</Anchor>
+			<Anchor>//api/name/controlDidOverrideMovement</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

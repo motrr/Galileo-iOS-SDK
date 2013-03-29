@@ -38,20 +38,13 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
-	
-	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/checkForUpdate">&nbsp;&nbsp;&nbsp;&nbsp;- checkForUpdate</option>
-	
-	<option value="//api/name/promptUserToInstallUpdate">&nbsp;&nbsp;&nbsp;&nbsp;- promptUserToInstallUpdate</option>
+	<option value="//api/name/checkForUpdateOnCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- checkForUpdateOnCompletion:</option>
 	
 	
 	
@@ -69,23 +62,13 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting and Getting the Delegate">Setting and Getting the Delegate</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Checking for firmware updates">Checking for firmware updates</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Applying firmware updates">Applying firmware updates</a></span></li>
-	
 </ul></li>
 
 
 
 
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
-	
-</ul></li>
 
 
 
@@ -93,9 +76,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkForUpdate">checkForUpdate</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/promptUserToInstallUpdate">promptUserToInstallUpdate</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkForUpdateOnCompletion:">checkForUpdateOnCompletion:</a></span></li>
 	
 </ul></li>
 
@@ -146,28 +127,13 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Setting and Getting the Delegate" name="task_Setting and Getting the Delegate"></a>
-						<h3 class="subsubtitle task-title">Setting and Getting the Delegate</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
-		<span class="tooltip"><p>The delegate of the FirmwareManager object.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li>
-						</ul>
-						
-						
 						<a title="Checking for firmware updates" name="task_Checking for firmware updates"></a>
-						<h3 class="subsubtitle task-title">Checking for firmware updates</h3>
-
+						
+<h3 class="subsubtitle task-title">Checking for firmware updates</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/checkForUpdate">&ndash;&nbsp;checkForUpdate</a></code>
+		<code><a href="#//api/name/checkForUpdateOnCompletion:">&ndash;&nbsp;checkForUpdateOnCompletion:</a></code>
 		<span class="tooltip"><p>Check for a new version of Galileo&rsquo;s firmware.</p></span>
 	</span>
 	
@@ -175,73 +141,11 @@
 </li>
 						</ul>
 						
-						
-						<a title="Applying firmware updates" name="task_Applying firmware updates"></a>
-						<h3 class="subsubtitle task-title">Applying firmware updates</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/promptUserToInstallUpdate">&ndash;&nbsp;promptUserToInstallUpdate</a></code>
-		<span class="tooltip"><p>Prompt user to install a firmware update to Galileo.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
 					</div>
 					
 					
 					
 					
-					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="subsubtitle method-title">delegate</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The delegate of the FirmwareManager object.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;FirmwareManagerDelegate&gt; delegate</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The delegate must adopt the FirmwareManagerDelegate protocol. The delegate is not retained.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">FirmwareManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
 					
 					
 					
@@ -252,8 +156,8 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/checkForUpdate" title="checkForUpdate"></a>
-	<h3 class="subsubtitle method-title">checkForUpdate</h3>
+	<a name="//api/name/checkForUpdateOnCompletion:" title="checkForUpdateOnCompletion:"></a>
+	<h3 class="subsubtitle method-title">checkForUpdateOnCompletion:</h3>
 	
 	
 	
@@ -263,19 +167,18 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)checkForUpdate</code></div>
+	<div class="method-subsection method-declaration"><code>- (void)checkForUpdateOnCompletion:(void ( ^ ) ( ))<em>completionBlock</em></code></div>
 
     
 	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This requires an internet connection and for Galileo to be connected. If a firmware update is available it will be downloaded and prepared for installation. The result of the update check can be obtained by implementing the <code>FirmwareManagerDelegate</code> protocol and setting the delegate property.</p>
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Code block that is to be called when the update check is complete.</p></dd>
+		</dl>
+		
 	</div>
 	
 	
@@ -284,39 +187,12 @@
 	
 	
 	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">FirmwareManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/promptUserToInstallUpdate" title="promptUserToInstallUpdate"></a>
-	<h3 class="subsubtitle method-title">promptUserToInstallUpdate</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Prompt user to install a firmware update to Galileo.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)promptUserToInstallUpdate</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method requires <code>checkForNewVersion</code> to have been called and for an update to be available, as indicated by the <code>newUpdateAvailable:</code> method being called on the delegate property. This will prompt the user to install the firmware update. This will halt all Galileo motion control until the update process is either complete or has been cancelled. It is vitally important that the user does not disconect the phone from Galileo whilst updating the firmware as this could damage Galileo irrecoverably.</p>
+		<p>This requires an internet connection and for Galileo to be connected. If a firmware update is available then the user will be prompted to install it using the motrr LAUNCH app. If the motrr LAUNCH app isn&rsquo;t installed, they will instead be prompted to install it from the Apple App Store. Otherwise, the motrr LAUNCH app will be launched and the user will be taken through the steps required to update Galileo&rsquo;s firmware.</p>
+
+<pre><code>Note that if the user launches either the Apple App Store or the motrr LAUNCH app then there is no guarantee that completionBlock will be called. 
+</code></pre>
 	</div>
 	
 	
@@ -346,7 +222,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-03-07)</span><br />
+						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-03-28)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						
