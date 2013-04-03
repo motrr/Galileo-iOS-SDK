@@ -4,7 +4,7 @@
 /** This header defines enumerations and constants common throughout the framework and required in code that makes use of it.
  */
 
-#define SIMULATE_ACCESSORY 1
+#define SIMULATE_ACCESSORY 0
 
 /*!
  @enum			GalileoControlAxis
