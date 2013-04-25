@@ -168,8 +168,31 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:completionBlock:waitUntilStationary:</TokenIdentifier>
+			<Abstract type="html">Rotate Galileo to a new position.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTargetPosition:(double)newTargetPosition completionBlock:(void ( ^ ) ( BOOL wasCommandPreempted ))completionBlock waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newTargetPosition</Name>
+					<Abstract type="html">The target position, in degrees, in relation to the origin.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">The block to be executed on completion or preemption.</Abstract>
+				</Parameter><Parameter>
+					<Name>waitUntilStationary</Name>
+					<Abstract type="html">If TRUE the call blocks untill the accessory has stopped moving.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTargetPosition:completionBlock:waitUntilStationary:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
-			<Abstract type="html">Move Galileo to a new position.</Abstract>
+			<Abstract type="html">Rotate Galileo to a new position.</Abstract>
 			<DeclaredIn>PositionControl.h</DeclaredIn>			
 			
 			<Declaration>- (void)setTargetPosition:(double)newTargetPosition notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
@@ -191,8 +214,31 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/incrementTargetPosition:completionBlock:waitUntilStationary:</TokenIdentifier>
+			<Abstract type="html">Rotate Galileo to a new position, relative to it&apos;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>- (void)incrementTargetPosition:(double)amount completionBlock:(void ( ^ ) ( BOOL wasCommandPreempted ))completionBlock waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>amount</Name>
+					<Abstract type="html">The amount, in degrees, to increment the target position by.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">The block to be executed on completion or preemption.</Abstract>
+				</Parameter><Parameter>
+					<Name>waitUntilStationary</Name>
+					<Abstract type="html">If TRUE the call blocks untill the accessory has stopped moving.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/incrementTargetPosition:completionBlock:waitUntilStationary:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/incrementTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
-			<Abstract type="html">Rotate Galileo clockwise to a new position, relative to it&apos;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</Abstract>
+			<Abstract type="html">Rotate Galileo to a new position, relative to it&apos;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</Abstract>
 			<DeclaredIn>PositionControl.h</DeclaredIn>			
 			
 			<Declaration>- (void)incrementTargetPosition:(double)amount notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>

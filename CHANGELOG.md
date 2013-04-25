@@ -1,3 +1,15 @@
+#0.7.5
+
+Added block based interface to position control. Also added missing property currentPosition to velocity control.
+
+#0.7.5
+
+Added block based interface to position control. Also added missing property currentPosition to velocity control.
+
+#0.7.4
+
+Added current position property to VelocityControl.
+
 #0.7.3
 
 Fixed potential conflicts with frameworks and apps that use GDataXML.

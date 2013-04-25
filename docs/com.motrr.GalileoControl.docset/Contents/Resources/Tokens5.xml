@@ -120,6 +120,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setCurrentPosition:</TokenIdentifier>
+			<Abstract type="html">The current position, in degress.</Abstract>
+			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			
+			
+			<Anchor>//api/name/currentPosition</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/currentPosition</TokenIdentifier>
+			<Abstract type="html">The current position, in degress.</Abstract>
+			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			
+			
+			<Anchor>//api/name/currentPosition</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VelocityControl/currentPosition</TokenIdentifier>
+			<Abstract type="html">The current position, in degress.</Abstract>
+			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			
+			
+			<Anchor>//api/name/currentPosition</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setCurrentVelocity:</TokenIdentifier>
 			<Abstract type="html">The current velocity Galileo is moving at.</Abstract>
 			<DeclaredIn>VelocityControl.h</DeclaredIn>			

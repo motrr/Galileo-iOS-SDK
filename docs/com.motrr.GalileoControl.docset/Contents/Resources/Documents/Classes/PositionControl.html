@@ -55,9 +55,13 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/incrementTargetPosition:completionBlock:waitUntilStationary:">&nbsp;&nbsp;&nbsp;&nbsp;- incrementTargetPosition:completionBlock:waitUntilStationary:</option>
+	
 	<option value="//api/name/incrementTargetPosition:notifyDelegate:waitUntilStationary:">&nbsp;&nbsp;&nbsp;&nbsp;- incrementTargetPosition:notifyDelegate:waitUntilStationary:</option>
 	
 	<option value="//api/name/resetOriginToCurrentPosition">&nbsp;&nbsp;&nbsp;&nbsp;- resetOriginToCurrentPosition</option>
+	
+	<option value="//api/name/setTargetPosition:completionBlock:waitUntilStationary:">&nbsp;&nbsp;&nbsp;&nbsp;- setTargetPosition:completionBlock:waitUntilStationary:</option>
 	
 	<option value="//api/name/setTargetPosition:notifyDelegate:waitUntilStationary:">&nbsp;&nbsp;&nbsp;&nbsp;- setTargetPosition:notifyDelegate:waitUntilStationary:</option>
 	
@@ -111,9 +115,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/incrementTargetPosition:completionBlock:waitUntilStationary:">incrementTargetPosition:completionBlock:waitUntilStationary:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/incrementTargetPosition:notifyDelegate:waitUntilStationary:">incrementTargetPosition:notifyDelegate:waitUntilStationary:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetOriginToCurrentPosition">resetOriginToCurrentPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTargetPosition:completionBlock:waitUntilStationary:">setTargetPosition:completionBlock:waitUntilStationary:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTargetPosition:notifyDelegate:waitUntilStationary:">setTargetPosition:notifyDelegate:waitUntilStationary:</a></span></li>
 	
@@ -233,8 +241,15 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/setTargetPosition:completionBlock:waitUntilStationary:">&ndash;&nbsp;setTargetPosition:completionBlock:waitUntilStationary:</a></code>
+		<span class="tooltip"><p>Rotate Galileo to a new position.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/setTargetPosition:notifyDelegate:waitUntilStationary:">&ndash;&nbsp;setTargetPosition:notifyDelegate:waitUntilStationary:</a></code>
-		<span class="tooltip"><p>Move Galileo to a new position.</p></span>
+		<span class="tooltip"><p>Rotate Galileo to a new position.</p></span>
 	</span>
 	
 	
@@ -248,8 +263,15 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/incrementTargetPosition:completionBlock:waitUntilStationary:">&ndash;&nbsp;incrementTargetPosition:completionBlock:waitUntilStationary:</a></code>
+		<span class="tooltip"><p>Rotate Galileo to a new position, relative to it&rsquo;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/incrementTargetPosition:notifyDelegate:waitUntilStationary:">&ndash;&nbsp;incrementTargetPosition:notifyDelegate:waitUntilStationary:</a></code>
-		<span class="tooltip"><p>Rotate Galileo clockwise to a new position, relative to it&rsquo;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</p></span>
+		<span class="tooltip"><p>Rotate Galileo to a new position, relative to it&rsquo;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</p></span>
 	</span>
 	
 	
@@ -426,13 +448,76 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/incrementTargetPosition:completionBlock:waitUntilStationary:" title="incrementTargetPosition:completionBlock:waitUntilStationary:"></a>
+	<h3 class="subsubtitle method-title">incrementTargetPosition:completionBlock:waitUntilStationary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Rotate Galileo to a new position, relative to it&rsquo;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)incrementTargetPosition:(double)<em>amount</em> completionBlock:(void ( ^ ) ( BOOL wasCommandPreempted ))<em>completionBlock</em> waitUntilStationary:(BOOL)<em>waitUntilStationary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>amount</em></dt>
+			<dd><p>The amount, in degrees, to increment the target position by.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>The block to be executed on completion or preemption.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>waitUntilStationary</em></dt>
+			<dd><p>If <code>TRUE</code> the call blocks untill the accessory has stopped moving.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a completion block is provided then it will be executed either when the target is reached or when the command is preempted.</p>
+
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PositionControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/incrementTargetPosition:notifyDelegate:waitUntilStationary:" title="incrementTargetPosition:notifyDelegate:waitUntilStationary:"></a>
 	<h3 class="subsubtitle method-title">incrementTargetPosition:notifyDelegate:waitUntilStationary:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Rotate Galileo clockwise to a new position, relative to it&rsquo;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</p>
+		<p>Rotate Galileo to a new position, relative to it&rsquo;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</p>
 	</div>		
 	
     
@@ -471,7 +556,7 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a delegate is provided then it will be notified either when the target is reached or when the command is preempted.</p>
 
-<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since accessory events are processed on the main thread.</p></div>
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
 	</div>
 	
 	
@@ -512,7 +597,70 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>After calling this function, all future absolute commands will be in reference to current position. It is not recommended that you reset the origin whilst the accessory is in motion, therefore you should check the value of <code>atTargetPosition</code> before calling this method.</p>
+		<p>After calling this function, all future absolute commands will be in reference to the current position. It is not recommended that you reset the origin whilst the accessory is in motion, therefore you should check the value of <code>atTargetPosition</code> before calling this method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PositionControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTargetPosition:completionBlock:waitUntilStationary:" title="setTargetPosition:completionBlock:waitUntilStationary:"></a>
+	<h3 class="subsubtitle method-title">setTargetPosition:completionBlock:waitUntilStationary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Rotate Galileo to a new position.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setTargetPosition:(double)<em>newTargetPosition</em> completionBlock:(void ( ^ ) ( BOOL wasCommandPreempted ))<em>completionBlock</em> waitUntilStationary:(BOOL)<em>waitUntilStationary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newTargetPosition</em></dt>
+			<dd><p>The target position, in degrees, in relation to the origin.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>The block to be executed on completion or preemption.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>waitUntilStationary</em></dt>
+			<dd><p>If <code>TRUE</code> the call blocks untill the accessory has stopped moving.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a completion block is provided then it will be executed either when the target is reached or when the command is preempted.</p>
+
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
 	</div>
 	
 	
@@ -536,7 +684,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Move Galileo to a new position.</p>
+		<p>Rotate Galileo to a new position.</p>
 	</div>		
 	
     
@@ -575,7 +723,7 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a delegate is provided then it will be notified either when the target is reached or when the command is preempted.</p>
 
-<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since accessory events are processed on the main thread.</p></div>
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
 	</div>
 	
 	
@@ -605,7 +753,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-04-03)</span><br />
+						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-04-25)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						
