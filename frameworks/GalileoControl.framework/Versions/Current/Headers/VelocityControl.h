@@ -42,7 +42,7 @@
 ///---------------------------------------------------------------------------------------
 
 /** The current position, in degress. */
-@property (nonatomic, readonly) double currentPosition;
+//@property (nonatomic, readonly) double currentPosition;
 
 /** The current velocity Galileo is moving at.
  */
