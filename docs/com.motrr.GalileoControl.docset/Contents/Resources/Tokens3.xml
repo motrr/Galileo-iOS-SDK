@@ -1,312 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Galileo.html">
+	<File path="Classes/FirmwareManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Galileo</TokenIdentifier>
-			<Abstract type="html">The Galileo class provides a singleton instance representing the currently attached Galileo device.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/FirmwareManager</TokenIdentifier>
+			<Abstract type="html">These constants can be passed to control methods to indicate which axis is to be controlled.
+
+@constant		GalileoControlAxisPan
+Control the pan axis.
+@constant		GalileoControlAxisTilt
+Control the tilt axis.</Abstract>
+			<DeclaredIn>FirmwareManager.h</DeclaredIn>
 			
 			<NodeRef refid="3"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/Galileo/sharedGalileo</TokenIdentifier>
-			<Abstract type="html">Returns the singleton Galileo instance.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/checkForUpdate:</TokenIdentifier>
+			<Abstract type="html">Check for a new version of Galileo&apos;s firmware.</Abstract>
+			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
 			
-			<Declaration>+ (Galileo *)sharedGalileo</Declaration>
-			
-			
-			<Anchor>//api/name/sharedGalileo</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setDelegate:</TokenIdentifier>
-			<Abstract type="html">The delegate of the Galileo object.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate of the Galileo object.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate of the Galileo object.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/waitForConnection</TokenIdentifier>
-			<Abstract type="html">Wait until a Galileo accessory is connected.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>- (void)waitForConnection</Declaration>
-			
-			
-			<Anchor>//api/name/waitForConnection</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/isConnected</TokenIdentifier>
-			<Abstract type="html">Check if a Galileo accessory is connected and ready to recieve commands.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isConnected</Declaration>
-			
-			
-			<Anchor>//api/name/isConnected</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/disconnect</TokenIdentifier>
-			<Abstract type="html">Disconnect a connected Galileo accessory.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>- (void)disconnect</Declaration>
-			
-			
-			<Anchor>//api/name/disconnect</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setConnectedToPowerSource:</TokenIdentifier>
-			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
-			
-			
-			<Anchor>//api/name/connectedToPowerSource</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/isConnectedToPowerSource</TokenIdentifier>
-			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
-			
-			
-			<Anchor>//api/name/connectedToPowerSource</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/connectedToPowerSource</TokenIdentifier>
-			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
-			
-			
-			<Anchor>//api/name/connectedToPowerSource</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setHardwareVersion:</TokenIdentifier>
-			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
-			
-			
-			<Anchor>//api/name/hardwareVersion</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/hardwareVersion</TokenIdentifier>
-			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
-			
-			
-			<Anchor>//api/name/hardwareVersion</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/hardwareVersion</TokenIdentifier>
-			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
-			
-			
-			<Anchor>//api/name/hardwareVersion</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setFirmwareVersion:</TokenIdentifier>
-			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
-			
-			
-			<Anchor>//api/name/firmwareVersion</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/firmwareVersion</TokenIdentifier>
-			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
-			
-			
-			<Anchor>//api/name/firmwareVersion</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/firmwareVersion</TokenIdentifier>
-			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
-			
-			
-			<Anchor>//api/name/firmwareVersion</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/selectMode:forAxis:</TokenIdentifier>
-			<Abstract type="html">Attempt to switch Galileo into a specified mode.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)selectMode:(GalileoMode)newMode forAxis:(GalileoControlAxis)axis</Declaration>
+			<Declaration>- (void)checkForUpdate:(void ( ^ ) ( FirmwareUpdateCheckOutcome checkOutcome ))completionBlock</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>newMode</Name>
-					<Abstract type="html">Desired mode you wish to switch to.</Abstract>
-				</Parameter><Parameter>
-					<Name>axis</Name>
-					<Abstract type="html">Axis you wish to change modes on.</Abstract>
+					<Name>completionBlock</Name>
+					<Abstract type="html">Code block that is to be called when the update check is complete.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Returns True if mode selection was succesful.</Abstract></ReturnValue>
-			<Anchor>//api/name/selectMode:forAxis:</Anchor>
+			
+			<Anchor>//api/name/checkForUpdate:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/modeForAxis:</TokenIdentifier>
-			<Abstract type="html">Get the current mode for a given axis.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/promptUserToUpdate:</TokenIdentifier>
+			<Abstract type="html">Prompt the user to update their Galileo&apos;s firmware to the latest version, if one is available.</Abstract>
+			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
 			
-			<Declaration>- (GalileoMode)modeForAxis:(GalileoControlAxis)axis</Declaration>
+			<Declaration>- (void)promptUserToUpdate:(void ( ^ ) ( ))completionBlock</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>axis</Name>
-					<Abstract type="html">Axis you wish to obtain the modes for.</Abstract>
+					<Name>completionBlock</Name>
+					<Abstract type="html">Code block that is to be called if no update is available, if the user dismisses the update or if the phone is disconnected from the internet.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Returns the current mode.</Abstract></ReturnValue>
-			<Anchor>//api/name/modeForAxis:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/velocityControlForAxis:</TokenIdentifier>
-			<Abstract type="html">Control Galileo&apos;s velocity for a specified axis.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>- (VelocityControl *)velocityControlForAxis:(GalileoControlAxis)axis</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>axis</Name>
-					<Abstract type="html">Axis you wish to control velocity for.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a VelocityControl object for controlling Galileo&apos;s velocity.</Abstract></ReturnValue>
-			<Anchor>//api/name/velocityControlForAxis:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/positionControlForAxis:</TokenIdentifier>
-			<Abstract type="html">Control Galileo&apos;s position for a specified axis.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>- (PositionControl *)positionControlForAxis:(GalileoControlAxis)axis</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>axis</Name>
-					<Abstract type="html">Axis you wish to control position for.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a PositionControl object for controlling Galileo&apos;s position.</Abstract></ReturnValue>
-			<Anchor>//api/name/positionControlForAxis:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setFirmwareManager:</TokenIdentifier>
-			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
-			
-			
-			<Anchor>//api/name/firmwareManager</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/firmwareManager</TokenIdentifier>
-			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
-			
-			
-			<Anchor>//api/name/firmwareManager</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/firmwareManager</TokenIdentifier>
-			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
-			
-			
-			<Anchor>//api/name/firmwareManager</Anchor>
+			<Anchor>//api/name/promptUserToUpdate:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

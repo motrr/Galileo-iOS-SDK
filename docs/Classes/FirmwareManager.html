@@ -44,7 +44,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/checkForUpdateOnCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- checkForUpdateOnCompletion:</option>
+	<option value="//api/name/checkForUpdate:">&nbsp;&nbsp;&nbsp;&nbsp;- checkForUpdate:</option>
+	
+	<option value="//api/name/promptUserToUpdate:">&nbsp;&nbsp;&nbsp;&nbsp;- promptUserToUpdate:</option>
 	
 	
 	
@@ -62,7 +64,7 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Checking for firmware updates">Checking for firmware updates</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Checking for and applying firmware updates">Checking for and applying firmware updates</a></span></li>
 	
 </ul></li>
 
@@ -76,7 +78,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkForUpdateOnCompletion:">checkForUpdateOnCompletion:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkForUpdate:">checkForUpdate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/promptUserToUpdate:">promptUserToUpdate:</a></span></li>
 	
 </ul></li>
 
@@ -115,7 +119,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The FirmwareManager object allows you to update Galileo&rsquo;s firmware. You can access the instance through the <code>firmwareManager</code> property of the <code>Galileo</code> singleton instance.</p>
+						<p>@enum           GalileoControlAxis</p>
 					</div>
 					
 					
@@ -127,14 +131,21 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Checking for firmware updates" name="task_Checking for firmware updates"></a>
+						<a title="Checking for and applying firmware updates" name="task_Checking for and applying firmware updates"></a>
 						
-<h3 class="subsubtitle task-title">Checking for firmware updates</h3>
+<h3 class="subsubtitle task-title">Checking for and applying firmware updates</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/checkForUpdateOnCompletion:">&ndash;&nbsp;checkForUpdateOnCompletion:</a></code>
+		<code><a href="#//api/name/checkForUpdate:">&ndash;&nbsp;checkForUpdate:</a></code>
 		<span class="tooltip"><p>Check for a new version of Galileo&rsquo;s firmware.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/promptUserToUpdate:">&ndash;&nbsp;promptUserToUpdate:</a></code>
+		<span class="tooltip"><p>Prompt the user to update their Galileo&rsquo;s firmware to the latest version, if one is available.</p></span>
 	</span>
 	
 	
@@ -156,8 +167,8 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/checkForUpdateOnCompletion:" title="checkForUpdateOnCompletion:"></a>
-	<h3 class="subsubtitle method-title">checkForUpdateOnCompletion:</h3>
+	<a name="//api/name/checkForUpdate:" title="checkForUpdate:"></a>
+	<h3 class="subsubtitle method-title">checkForUpdate:</h3>
 	
 	
 	
@@ -167,7 +178,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)checkForUpdateOnCompletion:(void ( ^ ) ( ))<em>completionBlock</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)checkForUpdate:(void ( ^ ) ( FirmwareUpdateCheckOutcome checkOutcome ))<em>completionBlock</em></code></div>
 
     
 	
@@ -189,10 +200,60 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This requires an internet connection and for Galileo to be connected. If a firmware update is available then the user will be prompted to install it using the motrr LAUNCH app. If the motrr LAUNCH app isn&rsquo;t installed, they will instead be prompted to install it from the Apple App Store. Otherwise, the motrr LAUNCH app will be launched and the user will be taken through the steps required to update Galileo&rsquo;s firmware.</p>
+		<p>This requires an internet connection and for Galileo to be connected.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FirmwareManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/promptUserToUpdate:" title="promptUserToUpdate:"></a>
+	<h3 class="subsubtitle method-title">promptUserToUpdate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Prompt the user to update their Galileo&rsquo;s firmware to the latest version, if one is available.</p>
+	</div>		
+	
+    
 
-<pre><code>Note that if the user launches either the Apple App Store or the motrr LAUNCH app then there is no guarantee that completionBlock will be called. 
-</code></pre>
+	<div class="method-subsection method-declaration"><code>- (void)promptUserToUpdate:(void ( ^ ) ( ))<em>completionBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Code block that is to be called if no update is available, if the user dismisses the update or if the phone is disconnected from the internet.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This requires an internet connection and for Galileo to be connected. If a firmware update is available then the user will be prompted to install it using the motrr app. If the motrr app isn&rsquo;t installed, they will instead be prompted to install it from the Apple App Store. Otherwise, the motrr app will be launched and the user will be taken through the steps required to update Galileo&rsquo;s firmware.</p>
+
+<p>Note that if the app launches either the Apple App Store or the motrr app then there is no guarantee that completionBlock will be called.</p>
 	</div>
 	
 	
@@ -222,7 +283,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-04-26)</span><br />
+						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-05-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

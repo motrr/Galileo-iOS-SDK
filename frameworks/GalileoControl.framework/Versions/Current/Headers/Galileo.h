@@ -21,6 +21,8 @@
 
 @interface Galileo : NSObject
 
+
+
 ///---------------------------------------------------------------------------------------
 /// @name Getting the Galileo instance
 ///---------------------------------------------------------------------------------------
@@ -61,6 +63,11 @@
 ///---------------------------------------------------------------------------------------
 /// @name Acccessing Galileo properties
 ///---------------------------------------------------------------------------------------
+
+/** Remaining battery charge as a percentage of total.
+ @discussion On early (Kickstarter) Galileo models this value will only provide a rough indication of remaining battery level.
+ */
+@property (nonatomic, readonly) unsigned int batteryLevelPercent;
 
 /** True if Galileo is connected to a power source.
  */

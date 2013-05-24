@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FirmwareManager.html">
+	<File path="docs/src/Useful Definitions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FirmwareManager</TokenIdentifier>
-			<Abstract type="html">The FirmwareManager object allows you to update Galileo&apos;s firmware. You can access the instance through the firmwareManager property of the Galileo singleton instance.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/doc/Useful Definitions</TokenIdentifier>
+			<Abstract type="html">This document defines enumerations and constants common throughout the framework and required in code that makes use of it.</Abstract>
+			<DeclaredIn>Useful Definitions-template.markdown</DeclaredIn>
 			
 			<NodeRef refid="2"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/checkForUpdateOnCompletion:</TokenIdentifier>
-			<Abstract type="html">Check for a new version of Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
-			
-			<Declaration>- (void)checkForUpdateOnCompletion:(void ( ^ ) ( ))completionBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>completionBlock</Name>
-					<Abstract type="html">Code block that is to be called when the update check is complete.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/checkForUpdateOnCompletion:</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
 		
 	</File>
 </Tokens>
