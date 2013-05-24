@@ -11,7 +11,7 @@
 #import "GalileoCommon.h"
 #import "VelocityControlDelegate.h"
 
-@interface VelocityControl : NSObject 
+@interface VelocityControl : NSObject
 
 
 ///---------------------------------------------------------------------------------------
@@ -29,7 +29,7 @@
 ///---------------------------------------------------------------------------------------
 
 /** The target velocity, in degrees per second.
- @discussion  Upon setting the target velocity, Galileo will attempt to accelerate to reach the target velocity as fast and as smoothly as possible. Setting the target velocity whilst Galileo is already moving will cause Galileo to immediately begin accelerating towards the new target velocity. Once the target velocity is reached, Galileo will continue moving at a constant velocity until a new target velocity is supplied. 
+ @discussion  Upon setting the target velocity, Galileo will attempt to accelerate to reach the target velocity as fast and as smoothly as possible. Setting the target velocity whilst Galileo is already moving will cause Galileo to immediately begin accelerating towards the new target velocity. Once the target velocity is reached, Galileo will continue moving at a constant velocity until a new target velocity is supplied.
  */
 @property (nonatomic) double targetVelocity;
 
@@ -41,6 +41,9 @@
 /// @name Accessing control parameters
 ///---------------------------------------------------------------------------------------
 
+/** The current position, in degress. */
+//@property (nonatomic, readonly) double currentPosition;
+
 /** The current velocity Galileo is moving at.
  */
 @property (nonatomic, readonly) double currentVelocity;
@@ -49,6 +52,11 @@
  */
 @property (nonatomic, readonly) double maxVelocity;
 
+/** Motor torque setting as a percentage of maximum possible.
+ @discussion A larger torque setting is useful to prevent stalling at greater velocities. Use a smaller torque setting to conserve power during low velocity operation.
+ @warning Using a torque setting larger than the default for extended periods may causing heating and damage the motors.
+ */
+@property (nonatomic) double torque;
 
 
 @end

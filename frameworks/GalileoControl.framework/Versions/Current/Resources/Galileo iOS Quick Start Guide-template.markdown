@@ -56,6 +56,7 @@ This method assumes you are using git for source control and have a git reposito
  - At some point in the future you may wish to update you project's copy of the SDK to the latest version. To do this, again navigate to the root directory and execture the following.
  
         cd Galileo-iOS-SDK
+        git checkout master
         git pull
         cd ..
         git add Galileo-iOS-SDK

@@ -1,215 +1,348 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PositionControl.html">
+	<File path="Classes/Galileo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PositionControl</TokenIdentifier>
-			<Abstract type="html">The PositionControl object allows you to control Galileo&apos;s rotational position for a given axis. You can access the instance through the positionControlForAxis: method of the Galileo singleton instance.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/Galileo</TokenIdentifier>
+			<Abstract type="html">The Galileo class provides a singleton instance representing the currently attached Galileo device.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>
 			
 			<NodeRef refid="4"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setSmallestAngleIncrement:</TokenIdentifier>
-			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/Galileo/sharedGalileo</TokenIdentifier>
+			<Abstract type="html">Returns the singleton Galileo instance.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
+			<Declaration>+ (Galileo *)sharedGalileo</Declaration>
 			
 			
-			<Anchor>//api/name/smallestAngleIncrement</Anchor>
+			<Anchor>//api/name/sharedGalileo</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/smallestAngleIncrement</TokenIdentifier>
-			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate of the Galileo object.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
+			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/smallestAngleIncrement</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/smallestAngleIncrement</TokenIdentifier>
-			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate of the Galileo object.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
+			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/smallestAngleIncrement</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setCurrentPosition:</TokenIdentifier>
-			<Abstract type="html">The current position, in degress.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/Galileo/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate of the Galileo object.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/currentPosition</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/currentPosition</TokenIdentifier>
-			<Abstract type="html">The current position, in degress.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/waitForConnection</TokenIdentifier>
+			<Abstract type="html">Wait until a Galileo accessory is connected.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			<Declaration>- (void)waitForConnection</Declaration>
 			
 			
-			<Anchor>//api/name/currentPosition</Anchor>
+			<Anchor>//api/name/waitForConnection</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/currentPosition</TokenIdentifier>
-			<Abstract type="html">The current position, in degress.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/isConnected</TokenIdentifier>
+			<Abstract type="html">Check if a Galileo accessory is connected and ready to recieve commands.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
+			<Declaration>- (BOOL)isConnected</Declaration>
 			
 			
-			<Anchor>//api/name/currentPosition</Anchor>
+			<Anchor>//api/name/isConnected</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:</TokenIdentifier>
-			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/disconnect</TokenIdentifier>
+			<Abstract type="html">Disconnect a connected Galileo accessory.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
+			<Declaration>- (void)disconnect</Declaration>
 			
 			
-			<Anchor>//api/name/targetPosition</Anchor>
+			<Anchor>//api/name/disconnect</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/targetPosition</TokenIdentifier>
-			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setBatteryLevelPercent:</TokenIdentifier>
+			<Abstract type="html">Remaining battery charge as a percentage of total.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
+			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
 			
 			
-			<Anchor>//api/name/targetPosition</Anchor>
+			<Anchor>//api/name/batteryLevelPercent</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/targetPosition</TokenIdentifier>
-			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/batteryLevelPercent</TokenIdentifier>
+			<Abstract type="html">Remaining battery charge as a percentage of total.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
+			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
 			
 			
-			<Anchor>//api/name/targetPosition</Anchor>
+			<Anchor>//api/name/batteryLevelPercent</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setAtTargetPosition:</TokenIdentifier>
-			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/Galileo/batteryLevelPercent</TokenIdentifier>
+			<Abstract type="html">Remaining battery charge as a percentage of total.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
+			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
 			
 			
-			<Anchor>//api/name/atTargetPosition</Anchor>
+			<Anchor>//api/name/batteryLevelPercent</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/isAtTargetPosition</TokenIdentifier>
-			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setConnectedToPowerSource:</TokenIdentifier>
+			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
 			
 			
-			<Anchor>//api/name/atTargetPosition</Anchor>
+			<Anchor>//api/name/connectedToPowerSource</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/atTargetPosition</TokenIdentifier>
-			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/isConnectedToPowerSource</TokenIdentifier>
+			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
 			
 			
-			<Anchor>//api/name/atTargetPosition</Anchor>
+			<Anchor>//api/name/connectedToPowerSource</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/resetOriginToCurrentPosition</TokenIdentifier>
-			<Abstract type="html">Resets the origin to the current position.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/Galileo/connectedToPowerSource</TokenIdentifier>
+			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>- (void)resetOriginToCurrentPosition</Declaration>
+			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
 			
 			
-			<Anchor>//api/name/resetOriginToCurrentPosition</Anchor>
+			<Anchor>//api/name/connectedToPowerSource</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
-			<Abstract type="html">Move Galileo to a new position.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setHardwareVersion:</TokenIdentifier>
+			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>- (void)setTargetPosition:(double)newTargetPosition notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
+			
+			
+			<Anchor>//api/name/hardwareVersion</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/hardwareVersion</TokenIdentifier>
+			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
+			
+			
+			<Anchor>//api/name/hardwareVersion</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Galileo/hardwareVersion</TokenIdentifier>
+			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
+			
+			
+			<Anchor>//api/name/hardwareVersion</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setFirmwareVersion:</TokenIdentifier>
+			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
+			
+			
+			<Anchor>//api/name/firmwareVersion</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/firmwareVersion</TokenIdentifier>
+			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
+			
+			
+			<Anchor>//api/name/firmwareVersion</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Galileo/firmwareVersion</TokenIdentifier>
+			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
+			
+			
+			<Anchor>//api/name/firmwareVersion</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/selectMode:forAxis:</TokenIdentifier>
+			<Abstract type="html">Attempt to switch Galileo into a specified mode.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)selectMode:(GalileoMode)newMode forAxis:(GalileoControlAxis)axis</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>newTargetPosition</Name>
-					<Abstract type="html">The target position, in degrees, in relation to the origin.</Abstract>
+					<Name>newMode</Name>
+					<Abstract type="html">Desired mode you wish to switch to.</Abstract>
 				</Parameter><Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The delegate to be notified on completion or preemption.</Abstract>
-				</Parameter><Parameter>
-					<Name>waitUntilStationary</Name>
-					<Abstract type="html">If TRUE the call blocks untill the accessory has stopped moving.</Abstract>
+					<Name>axis</Name>
+					<Abstract type="html">Axis you wish to change modes on.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setTargetPosition:notifyDelegate:waitUntilStationary:</Anchor>
+			<ReturnValue><Abstract type="html">Returns True if mode selection was succesful.</Abstract></ReturnValue>
+			<Anchor>//api/name/selectMode:forAxis:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/incrementTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
-			<Abstract type="html">Rotate Galileo clockwise to a new position, relative to it&apos;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/modeForAxis:</TokenIdentifier>
+			<Abstract type="html">Get the current mode for a given axis.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>- (void)incrementTargetPosition:(double)amount notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Declaration>- (GalileoMode)modeForAxis:(GalileoControlAxis)axis</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>amount</Name>
-					<Abstract type="html">The amount, in degrees, to increment the target position by.</Abstract>
-				</Parameter><Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The delegate to be notified on completion or preemption.</Abstract>
-				</Parameter><Parameter>
-					<Name>waitUntilStationary</Name>
-					<Abstract type="html">If TRUE the call blocks untill the accessory has stopped moving.</Abstract>
+					<Name>axis</Name>
+					<Abstract type="html">Axis you wish to obtain the modes for.</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the current mode.</Abstract></ReturnValue>
+			<Anchor>//api/name/modeForAxis:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/velocityControlForAxis:</TokenIdentifier>
+			<Abstract type="html">Control Galileo&apos;s velocity for a specified axis.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Anchor>//api/name/incrementTargetPosition:notifyDelegate:waitUntilStationary:</Anchor>
+			<Declaration>- (VelocityControl *)velocityControlForAxis:(GalileoControlAxis)axis</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>axis</Name>
+					<Abstract type="html">Axis you wish to control velocity for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a VelocityControl object for controlling Galileo&apos;s velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/velocityControlForAxis:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/positionControlForAxis:</TokenIdentifier>
+			<Abstract type="html">Control Galileo&apos;s position for a specified axis.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>- (PositionControl *)positionControlForAxis:(GalileoControlAxis)axis</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>axis</Name>
+					<Abstract type="html">Axis you wish to control position for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a PositionControl object for controlling Galileo&apos;s position.</Abstract></ReturnValue>
+			<Anchor>//api/name/positionControlForAxis:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setFirmwareManager:</TokenIdentifier>
+			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
+			
+			
+			<Anchor>//api/name/firmwareManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Galileo/firmwareManager</TokenIdentifier>
+			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
+			
+			
+			<Anchor>//api/name/firmwareManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Galileo/firmwareManager</TokenIdentifier>
+			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
+			<DeclaredIn>Galileo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
+			
+			
+			<Anchor>//api/name/firmwareManager</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

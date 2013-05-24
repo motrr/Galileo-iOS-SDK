@@ -44,7 +44,7 @@
 
 /** Resets the origin to the current position.
  
- @discussion After calling this function, all future absolute commands will be in reference to current position. It is not recommended that you reset the origin whilst the accessory is in motion, therefore you should check the value of `atTargetPosition` before calling this method.
+ @discussion After calling this function, all future absolute commands will be in reference to the current position. It is not recommended that you reset the origin whilst the accessory is in motion, therefore you should check the value of `atTargetPosition` before calling this method.
  */
 - (void) resetOriginToCurrentPosition;
 
@@ -53,7 +53,21 @@
 /// @name Controlling absolute position
 ///---------------------------------------------------------------------------------------
 
-/** Move Galileo to a new position. 
+/** Rotate Galileo to a new position.
+ 
+ @param newTargetPosition The target position, in degrees, in relation to the origin.
+ @param completionBlock The block to be executed on completion or preemption.
+ @param waitUntilStationary If `TRUE` the call blocks untill the accessory has stopped moving.
+ @discussion If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a completion block is provided then it will be executed either when the target is reached or when the command is preempted.
+ 
+ If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
+ 
+ @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
+ */
+- (void) setTargetPosition: (double) newTargetPosition completionBlock:(void (^)(BOOL wasCommandPreempted)) completionBlock waitUntilStationary: (BOOL) waitUntilStationary;
+
+
+/** Rotate Galileo to a new position.
  
  @param newTargetPosition The target position, in degrees, in relation to the origin.
  @param delegate The delegate to be notified on completion or preemption.
@@ -62,18 +76,30 @@
  
  If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
  
- @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since accessory events are processed on the main thread.
+ @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
  */
 - (void) setTargetPosition: (double) newTargetPosition notifyDelegate: (id<PositionControlDelegate>) delegate waitUntilStationary: (BOOL) waitUntilStationary;
 
-//- (void) setTargetPosition: (double) newTargetPosition completionHandler:(void (^)(double finalPosition)) handler;
 
 
 ///---------------------------------------------------------------------------------------
 /// @name Controlling relative position
 ///---------------------------------------------------------------------------------------
 
-/** Rotate Galileo clockwise to a new position, relative to it's current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.
+/** Rotate Galileo to a new position, relative to it's current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.
+ 
+ @param amount The amount, in degrees, to increment the target position by.
+ @param completionBlock The block to be executed on completion or preemption.
+ @param waitUntilStationary If `TRUE` the call blocks untill the accessory has stopped moving.
+ @discussion If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a completion block is provided then it will be executed either when the target is reached or when the command is preempted.
+ 
+ If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
+ 
+ @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
+ */
+- (void) incrementTargetPosition: (double) amount completionBlock:(void (^)(BOOL wasCommandPreempted)) completionBlock waitUntilStationary: (BOOL) waitUntilStationary;
+
+/** Rotate Galileo to a new position, relative to it's current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.
  
  @param amount The amount, in degrees, to increment the target position by.
  @param delegate The delegate to be notified on completion or preemption.
@@ -82,11 +108,11 @@
  
  If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
  
-  @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since accessory events are processed on the main thread.
+  @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
  */
 - (void) incrementTargetPosition: (double) amount notifyDelegate: (id<PositionControlDelegate>) delegate waitUntilStationary: (BOOL) waitUntilStationary;
 
-//- (void) incrementTargetPosition: (double) amount completionHandler:(void (^)(double finalPosition)) handler;
+
 
 
 
