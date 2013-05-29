@@ -1,3 +1,7 @@
+###0.8.1
+
+Fixed velocity delegate bug and no longer incorrectly retaining GalileoDelegate property. Scheduling ExternalAccessory I/O on main run loop doing otherwise is potentially causing problems.
+
 ##0.8
 
 Firmware manager API updates, torque settings adding to velocity control and new NSNotifications. Useful Definitions documentation added.

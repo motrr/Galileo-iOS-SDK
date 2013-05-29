@@ -39,7 +39,7 @@
 /** The delegate of the Galileo object.
  @discussion  The delegate must adopt the GalileoDelegate protocol. The delegate is not retained.
  */
-@property (nonatomic, retain) id<GalileoDelegate> delegate;
+@property (nonatomic, assign) id<GalileoDelegate> delegate;
 
 
 ///---------------------------------------------------------------------------------------
