@@ -28,7 +28,7 @@
 			<Abstract type="html">The delegate of the Galileo object.</Abstract>
 			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GalileoDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
@@ -40,7 +40,7 @@
 			<Abstract type="html">The delegate of the Galileo object.</Abstract>
 			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GalileoDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
@@ -52,7 +52,7 @@
 			<Abstract type="html">The delegate of the Galileo object.</Abstract>
 			<DeclaredIn>Galileo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) id&lt;GalileoDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GalileoDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>

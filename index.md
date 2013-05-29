@@ -8,7 +8,7 @@ The GalileoControl framework can be downloaded manually in either [.zip](https:/
 
 Git users can instead add the SDK repository as a submodule by executing the following command in the repository root.
 
-        git submodule add git@github.com:motrr/Galileo-iOS-SDK.git
+        git submodule add git://github.com/motrr/Galileo-iOS-SDK.git
         git commit -m "Added Galileo iOS SDK submodule"
 
 ## Follow the Quick Start Guide
