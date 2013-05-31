@@ -47,7 +47,7 @@
 ///---------------------------------------------------------------------------------------
 
 /** Wait until a Galileo accessory is connected.
- @discussion Once connected the delegate will be notified via the method `galileoDidConnect`. If a Galileo accessory is attached to the device this will call the delegate method instantly. Otherwise, the delegate will be notified when the accessory is plugged in to the device.
+ @discussion Once connected the `GalileoDidConnectNotification` will be posted and the delegate will be notified via the method `galileoDidConnect`. If a Galileo accessory is already attached to the device then notification will occur instantly. Otherwise, notification will occur when the accessory is plugged in to the device.
  */
 - (void) waitForConnection;
 
@@ -65,7 +65,7 @@
 ///---------------------------------------------------------------------------------------
 
 /** Remaining battery charge as a percentage of total.
- @discussion On early (Kickstarter) Galileo models this value will only provide a rough indication of remaining battery level.
+ @discussion On early (Kickstarter) Galileo models this value will only provide a rough indication of remaining battery level. Values of 25% or less should be considered low and values of 70% or above considered high. This corresponds to the three LED indicator states on the base of Galileo (red, amber, green).
  */
 @property (nonatomic, readonly) unsigned int batteryLevelPercent;
 
