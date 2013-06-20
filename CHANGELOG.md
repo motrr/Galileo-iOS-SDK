@@ -1,3 +1,7 @@
+###0.8.3
+
+Added API for setting torque current and active position hold for PositionControl. This can result in smoother motion for time lapse videos due to more accurate position increments.
+
 ###0.8.2
 
 Fixed bug in VelocityControl when decelerating from small velocities ( ~0.13 degrees/second ) down to zero.

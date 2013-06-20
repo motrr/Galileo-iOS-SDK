@@ -48,6 +48,78 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setHoldPositionWhenStationary:</TokenIdentifier>
+			<Abstract type="html">Indicates whether the motors should actively hold position whilst stationary.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL holdPositionWhenStationary</Declaration>
+			
+			
+			<Anchor>//api/name/holdPositionWhenStationary</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/holdPositionWhenStationary</TokenIdentifier>
+			<Abstract type="html">Indicates whether the motors should actively hold position whilst stationary.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL holdPositionWhenStationary</Declaration>
+			
+			
+			<Anchor>//api/name/holdPositionWhenStationary</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/holdPositionWhenStationary</TokenIdentifier>
+			<Abstract type="html">Indicates whether the motors should actively hold position whilst stationary.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL holdPositionWhenStationary</Declaration>
+			
+			
+			<Anchor>//api/name/holdPositionWhenStationary</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTorque:</TokenIdentifier>
+			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) double torque</Declaration>
+			
+			
+			<Anchor>//api/name/torque</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/torque</TokenIdentifier>
+			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) double torque</Declaration>
+			
+			
+			<Anchor>//api/name/torque</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/torque</TokenIdentifier>
+			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
+			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) double torque</Declaration>
+			
+			
+			<Anchor>//api/name/torque</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setCurrentPosition:</TokenIdentifier>
 			<Abstract type="html">The current position, in degress.</Abstract>
 			<DeclaredIn>PositionControl.h</DeclaredIn>			

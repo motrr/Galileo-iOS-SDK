@@ -14,7 +14,7 @@
 @interface PositionControl : NSObject
 
 ///---------------------------------------------------------------------------------------
-/// @name Accessing the smallest angle increment
+/// @name Accessing and setting control properties
 ///---------------------------------------------------------------------------------------
 
 /** The smallest angle, in degrees, that the accessory can reliably move.
@@ -22,6 +22,22 @@
  @discussion It is possible to attempt to move in increments smaller than `smallestAngleIncrement`, however the precision of such movements is not guaranteed. Attempts to move in increments less than the `smallestAngleIncrement` will result in actual movements less than or greater than the desired movement. However, the sum of many such small movements will still add up to the expected amount over a long enough sequence.
  */
 @property (nonatomic, readonly) double smallestAngleIncrement;
+
+/** Indicates whether the motors should actively hold position whilst stationary.
+ 
+ @discussion When the value of this property is `NO`, the motors will idle when stationary, reducing power consumption and permitting the user to manually rotate the device. This is the default setting.
+ 
+When the value of this property is `YES`, the motors will actively hold a fixed position whilst stationary. This will increase power consumption and will also prevent the user from phyiscally manipulating the unit to rotate to a specific position. However, this setting is useful in certain scenarios when accurately holding a fixed position is required.
+ 
+ @warning When setting this value to `YES`, care must be taken to ensure that it is set to `NO` once no longer required. Failure to do so will lead to increased power consumption and potential user frustration since the device will be locked in a given orientation. Furthermore, use of this setting with a high value for `torque` is strongly discouraged, as this is likely cause heating and damage the motors.
+ */
+@property (nonatomic) BOOL holdPositionWhenStationary;
+
+/** Motor torque setting as a percentage of maximum possible.
+ @discussion A larger torque setting is useful to prevent stalling at greater velocities. Use a smaller torque setting to conserve power during low velocity operation.
+ @warning Using a torque setting larger than the default for extended periods may causing heating and damage the motors, especially when `holdPositionWhenStationary` is set to `YES`.
+ */
+@property (nonatomic) double torque;
 
 
 ///---------------------------------------------------------------------------------------
