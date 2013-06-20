@@ -13,13 +13,13 @@ Git users can instead add the SDK repository as a submodule by executing the fol
 
 ## Follow the Quick Start Guide
 
-Read through our [Quick Start Guide](http://motrr.github.io/Galileo-iOS-SDK/docs/docs/src/Galileo%20iOS%20Quick%20Start%20Guide.html) to help you begin writing iOS apps that can  control Galileo. The guide will take you through the process of installing the framework, configuring Xcode to work with Galileo and some basic uses of the GalileoControl framework API for sending control commands.
+Read through our [Quick Start Guide](http://motrr.github.com/Galileo-iOS-SDK/docs/docs/src/Galileo%20iOS%20Quick%20Start%20Guide.html) to help you begin writing iOS apps that can  control Galileo. The guide will take you through the process of installing the framework, configuring Xcode to work with Galileo and some basic uses of the GalileoControl framework API for sending control commands.
 
 ## Read the reference docs
 
-You can view the [reference documentation](http://motrr.github.io/Galileo-iOS-SDK/docs/index.html) for the GalileoControl framework online.
+You can view the [reference documentation](http://motrr.github.com/Galileo-iOS-SDK/docs/index.html) for the GalileoControl framework online.
 
-You may also download the framework docset for installing in Xcode in either [.zip](http://motrr.github.io/Galileo-iOS-SDK/docs/com.motrr.GalileoControl.docset.zip) or [.tar.gz](http://motrr.github.io/Galileo-iOS-SDK/docs/com.motrr.GalileoControl.docset.tar.gz) format.
+You may also download the framework docset for installing in Xcode in either [.zip](http://motrr.github.com/Galileo-iOS-SDK/docs/com.motrr.GalileoControl.docset.zip) or [.tar.gz](http://motrr.github.com/Galileo-iOS-SDK/docs/com.motrr.GalileoControl.docset.tar.gz) format.
 
 ## Check out some sample projects
 
