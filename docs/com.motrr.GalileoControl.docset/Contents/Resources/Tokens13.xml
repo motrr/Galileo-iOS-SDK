@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GCLogLevel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GCLogLevel</TokenIdentifier>
+			<Abstract type="html">Detail level of GalileoControl framework log output.</Abstract>
+			<DeclaredIn>GCCommon.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCLogLevelNone</TokenIdentifier>
+            <Abstract type="html">No logging output at all.</Abstract>
+            <Declaration>GCLogLevelNone</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCLogLevelError</TokenIdentifier>
+            <Abstract type="html">Output only error messages.</Abstract>
+            <Declaration>GCLogLevelError</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCLogLevelWarning</TokenIdentifier>
+            <Abstract type="html">Output error and warning messages.</Abstract>
+            <Declaration>GCLogLevelWarning</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCLogLevelInfo</TokenIdentifier>
+            <Abstract type="html">Output messages from prior levels and also high level debug information.</Abstract>
+            <Declaration>GCLogLevelInfo</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCLogLevelDebug</TokenIdentifier>
+            <Abstract type="html">Output messages from prior levels and also more fine grained debug information. Incudes details of packets sent and received.</Abstract>
+            <Declaration>GCLogLevelDebug</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCLogLevelTrace</TokenIdentifier>
+            <Abstract type="html">Output all log messages. Includes details of bytes read and written.</Abstract>
+            <Declaration>GCLogLevelTrace</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+	</File>
+</Tokens>

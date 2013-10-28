@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Galileo.html">
+	<File path="Classes/GCGalileo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Galileo</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/GCGalileo</TokenIdentifier>
 			<Abstract type="html">The Galileo class provides a singleton instance representing the currently attached Galileo device.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+            
 			
 			<NodeRef refid="4"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/Galileo/sharedGalileo</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/GCGalileo/sharedGalileo</TokenIdentifier>
 			<Abstract type="html">Returns the singleton Galileo instance.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>+ (Galileo *)sharedGalileo</Declaration>
+			<Declaration>+ (GCGalileo *)sharedGalileo</Declaration>
 			
 			
 			<Anchor>//api/name/sharedGalileo</Anchor>
@@ -24,11 +25,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setDelegate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setDelegate:</TokenIdentifier>
 			<Abstract type="html">The delegate of the Galileo object.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) id&lt;GalileoDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GCGalileoDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
@@ -36,11 +37,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/delegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/delegate</TokenIdentifier>
 			<Abstract type="html">The delegate of the Galileo object.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) id&lt;GalileoDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GCGalileoDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
@@ -48,11 +49,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/delegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/delegate</TokenIdentifier>
 			<Abstract type="html">The delegate of the Galileo object.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) id&lt;GalileoDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GCGalileoDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
@@ -60,9 +61,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/waitForConnection</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/waitForConnection</TokenIdentifier>
 			<Abstract type="html">Wait until a Galileo accessory is connected.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>- (void)waitForConnection</Declaration>
 			
@@ -72,9 +73,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/isConnected</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/isConnected</TokenIdentifier>
 			<Abstract type="html">Check if a Galileo accessory is connected and ready to recieve commands.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)isConnected</Declaration>
 			
@@ -84,9 +85,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/disconnect</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/disconnect</TokenIdentifier>
 			<Abstract type="html">Disconnect a connected Galileo accessory.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>- (void)disconnect</Declaration>
 			
@@ -96,9 +97,81 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setBatteryLevelPercent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setModelType:</TokenIdentifier>
+			<Abstract type="html">The model type of the connected Galileo.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *modelType</Declaration>
+			
+			
+			<Anchor>//api/name/modelType</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/modelType</TokenIdentifier>
+			<Abstract type="html">The model type of the connected Galileo.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *modelType</Declaration>
+			
+			
+			<Anchor>//api/name/modelType</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/modelType</TokenIdentifier>
+			<Abstract type="html">The model type of the connected Galileo.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *modelType</Declaration>
+			
+			
+			<Anchor>//api/name/modelType</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setModelName:</TokenIdentifier>
+			<Abstract type="html">The name of the connected Galileo.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *modelName</Declaration>
+			
+			
+			<Anchor>//api/name/modelName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/modelName</TokenIdentifier>
+			<Abstract type="html">The name of the connected Galileo.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *modelName</Declaration>
+			
+			
+			<Anchor>//api/name/modelName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/modelName</TokenIdentifier>
+			<Abstract type="html">The name of the connected Galileo.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *modelName</Declaration>
+			
+			
+			<Anchor>//api/name/modelName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setBatteryLevelPercent:</TokenIdentifier>
 			<Abstract type="html">Remaining battery charge as a percentage of total.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
 			
@@ -108,9 +181,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/batteryLevelPercent</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/batteryLevelPercent</TokenIdentifier>
 			<Abstract type="html">Remaining battery charge as a percentage of total.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
 			
@@ -120,9 +193,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/batteryLevelPercent</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/batteryLevelPercent</TokenIdentifier>
 			<Abstract type="html">Remaining battery charge as a percentage of total.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int batteryLevelPercent</Declaration>
 			
@@ -132,9 +205,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setConnectedToPowerSource:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setConnectedToPowerSource:</TokenIdentifier>
 			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
 			
@@ -144,9 +217,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/isConnectedToPowerSource</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/isConnectedToPowerSource</TokenIdentifier>
 			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
 			
@@ -156,9 +229,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/connectedToPowerSource</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/connectedToPowerSource</TokenIdentifier>
 			<Abstract type="html">True if Galileo is connected to a power source.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isConnectedToPowerSource) BOOL connectedToPowerSource</Declaration>
 			
@@ -168,11 +241,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setHardwareVersion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setHardwareVersion:</TokenIdentifier>
 			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
+			<Declaration>@property (nonatomic, readonly) GCHardwareVersion hardwareVersion</Declaration>
 			
 			
 			<Anchor>//api/name/hardwareVersion</Anchor>
@@ -180,11 +253,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/hardwareVersion</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/hardwareVersion</TokenIdentifier>
 			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
+			<Declaration>@property (nonatomic, readonly) GCHardwareVersion hardwareVersion</Declaration>
 			
 			
 			<Anchor>//api/name/hardwareVersion</Anchor>
@@ -192,11 +265,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/hardwareVersion</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/hardwareVersion</TokenIdentifier>
 			<Abstract type="html">Hardware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) unsigned int hardwareVersion</Declaration>
+			<Declaration>@property (nonatomic, readonly) GCHardwareVersion hardwareVersion</Declaration>
 			
 			
 			<Anchor>//api/name/hardwareVersion</Anchor>
@@ -204,9 +277,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setFirmwareVersion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setFirmwareVersion:</TokenIdentifier>
 			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
 			
@@ -216,9 +289,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/firmwareVersion</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/firmwareVersion</TokenIdentifier>
 			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
 			
@@ -228,9 +301,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/firmwareVersion</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/firmwareVersion</TokenIdentifier>
 			<Abstract type="html">Firmware version for the currently connected Galileo.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int firmwareVersion</Declaration>
 			
@@ -240,11 +313,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/selectMode:forAxis:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/selectMode:forAxis:</TokenIdentifier>
 			<Abstract type="html">Attempt to switch Galileo into a specified mode.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)selectMode:(GalileoMode)newMode forAxis:(GalileoControlAxis)axis</Declaration>
+			<Declaration>- (BOOL)selectMode:(GCMode)newMode forAxis:(GCControlAxis)axis</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>newMode</Name>
@@ -260,11 +333,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/modeForAxis:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/modeForAxis:</TokenIdentifier>
 			<Abstract type="html">Get the current mode for a given axis.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>- (GalileoMode)modeForAxis:(GalileoControlAxis)axis</Declaration>
+			<Declaration>- (GCMode)modeForAxis:(GCControlAxis)axis</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>axis</Name>
@@ -277,45 +350,45 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/velocityControlForAxis:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/velocityControlForAxis:</TokenIdentifier>
 			<Abstract type="html">Control Galileo&apos;s velocity for a specified axis.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>- (VelocityControl *)velocityControlForAxis:(GalileoControlAxis)axis</Declaration>
+			<Declaration>- (GCVelocityControl *)velocityControlForAxis:(GCControlAxis)axis</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>axis</Name>
 					<Abstract type="html">Axis you wish to control velocity for.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a VelocityControl object for controlling Galileo&apos;s velocity.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">Returns a GCVelocityControl object for controlling Galileo&apos;s velocity.</Abstract></ReturnValue>
 			<Anchor>//api/name/velocityControlForAxis:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/positionControlForAxis:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/positionControlForAxis:</TokenIdentifier>
 			<Abstract type="html">Control Galileo&apos;s position for a specified axis.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>- (PositionControl *)positionControlForAxis:(GalileoControlAxis)axis</Declaration>
+			<Declaration>- (GCPositionControl *)positionControlForAxis:(GCControlAxis)axis</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>axis</Name>
 					<Abstract type="html">Axis you wish to control position for.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a PositionControl object for controlling Galileo&apos;s position.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">Returns a GCPositionControl object for controlling Galileo&apos;s position.</Abstract></ReturnValue>
 			<Anchor>//api/name/positionControlForAxis:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/setFirmwareManager:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setFirmwareManager:</TokenIdentifier>
 			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) GCFirmwareManager *firmwareManager</Declaration>
 			
 			
 			<Anchor>//api/name/firmwareManager</Anchor>
@@ -323,11 +396,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Galileo/firmwareManager</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/firmwareManager</TokenIdentifier>
 			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) GCFirmwareManager *firmwareManager</Declaration>
 			
 			
 			<Anchor>//api/name/firmwareManager</Anchor>
@@ -335,16 +408,89 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Galileo/firmwareManager</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/firmwareManager</TokenIdentifier>
 			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>Galileo.h</DeclaredIn>			
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) FirmwareManager *firmwareManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) GCFirmwareManager *firmwareManager</Declaration>
 			
 			
 			<Anchor>//api/name/firmwareManager</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setLogLevel:</TokenIdentifier>
+			<Abstract type="html">Set the required level of logging detail.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) GCLogLevel logLevel</Declaration>
+			
+			
+			<Anchor>//api/name/logLevel</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/logLevel</TokenIdentifier>
+			<Abstract type="html">Set the required level of logging detail.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) GCLogLevel logLevel</Declaration>
+			
+			
+			<Anchor>//api/name/logLevel</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/logLevel</TokenIdentifier>
+			<Abstract type="html">Set the required level of logging detail.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) GCLogLevel logLevel</Declaration>
+			
+			
+			<Anchor>//api/name/logLevel</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setOverrideLoggingFunction:</TokenIdentifier>
+			<Abstract type="html">Override the default logging function with your own.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( GCLogLevel logLevel , const char *functionName , unsigned int lineNumber , NSString *format , va_list args ) overrideLoggingFunction</Declaration>
+			
+			
+			<Anchor>//api/name/overrideLoggingFunction</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/overrideLoggingFunction</TokenIdentifier>
+			<Abstract type="html">Override the default logging function with your own.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( GCLogLevel logLevel , const char *functionName , unsigned int lineNumber , NSString *format , va_list args ) overrideLoggingFunction</Declaration>
+			
+			
+			<Anchor>//api/name/overrideLoggingFunction</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/overrideLoggingFunction</TokenIdentifier>
+			<Abstract type="html">Override the default logging function with your own.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( GCLogLevel logLevel , const char *functionName , unsigned int lineNumber , NSString *format , va_list args ) overrideLoggingFunction</Declaration>
+			
+			
+			<Anchor>//api/name/overrideLoggingFunction</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

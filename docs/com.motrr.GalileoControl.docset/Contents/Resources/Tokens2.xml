@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="docs/src/Useful Definitions.html">
+	<File path="docs/src/NSNotifications.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/doc/Useful Definitions</TokenIdentifier>
-			<Abstract type="html">This document defines enumerations and constants common throughout the framework and required in code that makes use of it.</Abstract>
-			<DeclaredIn>Useful Definitions-template.markdown</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/doc/NSNotifications</TokenIdentifier>
+			<Abstract type="html">Notifications posted by the GalileoControl framework.</Abstract>
+			<DeclaredIn>NSNotifications-template.markdown</DeclaredIn>
+            
 			
 			<NodeRef refid="2"/>
 		</Token>
 		
 		
+        
 	</File>
 </Tokens>

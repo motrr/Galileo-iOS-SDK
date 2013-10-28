@@ -1,3 +1,11 @@
+##0.9
+
+Added support for BLE (Bluetooth Low Energy) Galileo models.
+
+* The SDK now supports BLE Galileo models via CoreBluetooth. The conneciton process is still broadly the same, see the documentation for details.
+* The level of logging output can now be selected. A custom log function can also be defined, permitting (for example) remote logginng of GalileoControl output via services such as TestFlight.
+* PositionControl now permits user-defined values of acceleration and velocity.
+
 ###0.8.3
 
 Added API for setting torque current and active position hold for PositionControl. This can result in smoother motion for time lapse videos due to more accurate position increments.

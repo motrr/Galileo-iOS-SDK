@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GCFirmwareUpdateCheckOutcome.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GCFirmwareUpdateCheckOutcome</TokenIdentifier>
+			<Abstract type="html">  
+Outcome after checking for a Galileo firmeware update.</Abstract>
+			<DeclaredIn>GCCommon.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCFirmwareUpdateCheckOutcomeConnectionUnavailable</TokenIdentifier>
+            <Abstract type="html">Check was not possible due to a connection problem.</Abstract>
+            <Declaration>GCFirmwareUpdateCheckOutcomeConnectionUnavailable</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCFirmwareUpdateCheckOutcomeAlreadyUpToDate</TokenIdentifier>
+            <Abstract type="html">Check succeeded and Galileo is already using the latest available firmware.</Abstract>
+            <Declaration>GCFirmwareUpdateCheckOutcomeAlreadyUpToDate</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCFirmwareUpdateCheckOutcomeUpdateAvailable</TokenIdentifier>
+            <Abstract type="html">Check succeeded and a more recent firmware version is available.</Abstract>
+            <Declaration>GCFirmwareUpdateCheckOutcomeUpdateAvailable</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+	</File>
+</Tokens>
