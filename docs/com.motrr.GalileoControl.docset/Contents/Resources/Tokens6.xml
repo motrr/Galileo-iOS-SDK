@@ -1,22 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VelocityControl.html">
+	<File path="Classes/GCVelocityControl.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VelocityControl</TokenIdentifier>
-			<Abstract type="html">The VelocityControl object allows you to control Galileo&apos;s angular velocity for a given axis. You can access the instance through the velocityControlForAxis: method of the Galileo singleton instance.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GCVelocityControl</TokenIdentifier>
+			<Abstract type="html">The GCVelocityControl object allows you to control Galileo&apos;s angular velocity for a given axis. You can access the instance through the velocityControlForAxis: method of the Galileo singleton instance.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+            
 			
 			<NodeRef refid="6"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setDelegate:</TokenIdentifier>
-			<Abstract type="html">The delegate of the VelocityControl object.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setControlDidReachTargetVelocity:</TokenIdentifier>
+			<Abstract type="html">Block-based handler for when target velocity is reached.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) id&lt;VelocityControlDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( void ) controlDidReachTargetVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/controlDidReachTargetVelocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/controlDidReachTargetVelocity</TokenIdentifier>
+			<Abstract type="html">Block-based handler for when target velocity is reached.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( void ) controlDidReachTargetVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/controlDidReachTargetVelocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/controlDidReachTargetVelocity</TokenIdentifier>
+			<Abstract type="html">Block-based handler for when target velocity is reached.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( void ) controlDidReachTargetVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/controlDidReachTargetVelocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Delegate-based handler for when target velocity is reached.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;GCVelocityControlDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
@@ -24,23 +61,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate of the VelocityControl object.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate-based handler for when target velocity is reached.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) id&lt;VelocityControlDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VelocityControl/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate of the VelocityControl object.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;VelocityControlDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GCVelocityControlDelegate&gt; delegate</Declaration>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
@@ -48,45 +73,21 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setTargetVelocity:</TokenIdentifier>
-			<Abstract type="html">The target velocity, in degrees per second.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate-based handler for when target velocity is reached.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) double targetVelocity</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;GCVelocityControlDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/targetVelocity</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/targetVelocity</TokenIdentifier>
-			<Abstract type="html">The target velocity, in degrees per second.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) double targetVelocity</Declaration>
-			
-			
-			<Anchor>//api/name/targetVelocity</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VelocityControl/targetVelocity</TokenIdentifier>
-			<Abstract type="html">The target velocity, in degrees per second.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) double targetVelocity</Declaration>
-			
-			
-			<Anchor>//api/name/targetVelocity</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setAtTargetVelocity:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setAtTargetVelocity:</TokenIdentifier>
 			<Abstract type="html">True if the accessory is cruising at the target velocity. False if the accessory is still accelerating towards the target velocity.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isAtTargetVelocity) BOOL atTargetVelocity</Declaration>
 			
@@ -96,9 +97,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/isAtTargetVelocity</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/isAtTargetVelocity</TokenIdentifier>
 			<Abstract type="html">True if the accessory is cruising at the target velocity. False if the accessory is still accelerating towards the target velocity.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isAtTargetVelocity) BOOL atTargetVelocity</Declaration>
 			
@@ -108,9 +109,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VelocityControl/atTargetVelocity</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/atTargetVelocity</TokenIdentifier>
 			<Abstract type="html">True if the accessory is cruising at the target velocity. False if the accessory is still accelerating towards the target velocity.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isAtTargetVelocity) BOOL atTargetVelocity</Declaration>
 			
@@ -120,45 +121,81 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setCurrentVelocity:</TokenIdentifier>
-			<Abstract type="html">The current velocity Galileo is moving at.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setTargetVelocity:</TokenIdentifier>
+			<Abstract type="html">The target velocity, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) double currentVelocity</Declaration>
+			<Declaration>@property (nonatomic) double targetVelocity</Declaration>
 			
 			
-			<Anchor>//api/name/currentVelocity</Anchor>
+			<Anchor>//api/name/targetVelocity</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/currentVelocity</TokenIdentifier>
-			<Abstract type="html">The current velocity Galileo is moving at.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/targetVelocity</TokenIdentifier>
+			<Abstract type="html">The target velocity, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) double currentVelocity</Declaration>
+			<Declaration>@property (nonatomic) double targetVelocity</Declaration>
 			
 			
-			<Anchor>//api/name/currentVelocity</Anchor>
+			<Anchor>//api/name/targetVelocity</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VelocityControl/currentVelocity</TokenIdentifier>
-			<Abstract type="html">The current velocity Galileo is moving at.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/targetVelocity</TokenIdentifier>
+			<Abstract type="html">The target velocity, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) double currentVelocity</Declaration>
+			<Declaration>@property (nonatomic) double targetVelocity</Declaration>
 			
 			
-			<Anchor>//api/name/currentVelocity</Anchor>
+			<Anchor>//api/name/targetVelocity</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setMaxVelocity:</TokenIdentifier>
-			<Abstract type="html">The maximum velocity Galileo is able to move at.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setVelocity:</TokenIdentifier>
+			<Abstract type="html">The current velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/velocity</TokenIdentifier>
+			<Abstract type="html">The current velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/velocity</TokenIdentifier>
+			<Abstract type="html">The current velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setMaxVelocity:</TokenIdentifier>
+			<Abstract type="html">The maximum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double maxVelocity</Declaration>
 			
@@ -168,9 +205,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/maxVelocity</TokenIdentifier>
-			<Abstract type="html">The maximum velocity Galileo is able to move at.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/maxVelocity</TokenIdentifier>
+			<Abstract type="html">The maximum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double maxVelocity</Declaration>
 			
@@ -180,9 +217,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VelocityControl/maxVelocity</TokenIdentifier>
-			<Abstract type="html">The maximum velocity Galileo is able to move at.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/maxVelocity</TokenIdentifier>
+			<Abstract type="html">The maximum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double maxVelocity</Declaration>
 			
@@ -192,9 +229,45 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/setTorque:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setMinVelocity:</TokenIdentifier>
+			<Abstract type="html">The minimum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/minVelocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/minVelocity</TokenIdentifier>
+			<Abstract type="html">The minimum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/minVelocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/minVelocity</TokenIdentifier>
+			<Abstract type="html">The minimum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/minVelocity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setTorque:</TokenIdentifier>
 			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) double torque</Declaration>
 			
@@ -204,9 +277,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VelocityControl/torque</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/torque</TokenIdentifier>
 			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) double torque</Declaration>
 			
@@ -216,9 +289,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VelocityControl/torque</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/torque</TokenIdentifier>
 			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
-			<DeclaredIn>VelocityControl.h</DeclaredIn>			
+			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) double torque</Declaration>
 			
@@ -227,5 +300,6 @@
             <NodeRef refid="6"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GCControlAxis.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GCControlAxis</TokenIdentifier>
+			<Abstract type="html">Passed to control methods to indicate which axis is to be controlled.</Abstract>
+			<DeclaredIn>GCCommon.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCControlAxisPan</TokenIdentifier>
+            <Abstract type="html">Control the pan axis.</Abstract>
+            <Declaration>GCControlAxisPan</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCControlAxisTilt</TokenIdentifier>
+            <Abstract type="html">Control the tilt axis.</Abstract>
+            <Declaration>GCControlAxisTilt</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+	</File>
+</Tokens>

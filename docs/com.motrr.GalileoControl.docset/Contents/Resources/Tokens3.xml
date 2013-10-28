@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FirmwareManager.html">
+	<File path="Classes/GCFirmwareManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FirmwareManager</TokenIdentifier>
-			<Abstract type="html">These constants can be passed to control methods to indicate which axis is to be controlled.
-
-@constant		GalileoControlAxisPan
-Control the pan axis.
-@constant		GalileoControlAxisTilt
-Control the tilt axis.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GCFirmwareManager</TokenIdentifier>
+			<Abstract type="html">The GCFirmwareManager object allows you to update Galileo&apos;s firmware. You can access the instance through the firmwareManager property of the Galileo singleton instance.</Abstract>
+			<DeclaredIn>GCFirmwareManager.h</DeclaredIn>
+            
 			
 			<NodeRef refid="3"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/checkForUpdate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCFirmwareManager/checkForUpdate:</TokenIdentifier>
 			<Abstract type="html">Check for a new version of Galileo&apos;s firmware.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
+			<DeclaredIn>GCFirmwareManager.h</DeclaredIn>
 			
-			<Declaration>- (void)checkForUpdate:(void ( ^ ) ( FirmwareUpdateCheckOutcome checkOutcome ))completionBlock</Declaration>
+			<Declaration>- (void)checkForUpdate:(void ( ^ ) ( GCFirmwareUpdateCheckOutcome checkOutcome ))completionBlock</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>completionBlock</Name>
@@ -34,9 +30,9 @@ Control the tilt axis.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FirmwareManager/promptUserToUpdate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCFirmwareManager/promptUserToUpdate:</TokenIdentifier>
 			<Abstract type="html">Prompt the user to update their Galileo&apos;s firmware to the latest version, if one is available.</Abstract>
-			<DeclaredIn>FirmwareManager.h</DeclaredIn>			
+			<DeclaredIn>GCFirmwareManager.h</DeclaredIn>
 			
 			<Declaration>- (void)promptUserToUpdate:(void ( ^ ) ( ))completionBlock</Declaration>
 			<Parameters>
@@ -50,5 +46,6 @@ Control the tilt axis.</Abstract>
             <NodeRef refid="3"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

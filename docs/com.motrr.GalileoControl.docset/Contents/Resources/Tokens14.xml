@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GCMode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GCMode</TokenIdentifier>
+			<Abstract type="html">Defines the possible modes Galileo can be used in, only one mode may be used at a time.</Abstract>
+			<DeclaredIn>GCCommon.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCModePositionControl</TokenIdentifier>
+            <Abstract type="html">Mode for using GCPositionControl.</Abstract>
+            <Declaration>GCModePositionControl</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCModeVelocityControl</TokenIdentifier>
+            <Abstract type="html">Mode for using GCVelocityControl.</Abstract>
+            <Declaration>GCModeVelocityControl</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCModeStationary</TokenIdentifier>
+            <Abstract type="html">Mode for using GCFirmwareManager.</Abstract>
+            <Declaration>GCModeStationary</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+	</File>
+</Tokens>

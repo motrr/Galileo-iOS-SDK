@@ -2,83 +2,27 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>Galileo iOS Quick Start Guide</title>
+		<title>Galileo iOS Quick Start Guide Document</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../../css/stylesPrint.css" />	
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">GalileoControl </a></h1>
-				<a id="developerHome" href="../index.html">Motrr</a>
+				<h1><a id="libraryTitle" href="../../index.html">GalileoControl </a></h1>
+				<a id="developerHome" href="../../index.html">Motrr</a>
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode" id="pageTitleHeader">Galileo iOS Quick Start Guide</h1>
+				<h1 class="hideInXcode" id="pageTitleHeader">Galileo iOS Quick Start Guide Document</h1>
 			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
-	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</select>
-				</li>
-			</ul>
+			<ul id="headerButtons" role="toolbar"></ul>
 		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-			</ul>
-		</nav>
 		<article>
-			<a title="Galileo iOS Quick Start Guide" name="top"></a>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="Galileo iOS Quick Start Guide" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../../index.html">Index</a></li>
-	<li><a href="../../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">Galileo iOS Quick Start Guide</h1>
-					</div>		
-				</div>
+			<a title="Galileo iOS Quick Start Guide Document" name="top"></a>
+			<div id="overview_contents" role="main">
 				<div id="container">	
 					<p>Welcome to the Galileo iOS Quick Start Guide for developers. The following information should help you get started with building Galileo compatible applications on the iOS platform. The examples in this guide were built using Xcode 4.6 and have been tested with iOS SDK 5.0.1 and 6.1. Comments, corrections and suggestions should be sent to <a href="mailto:dev@motrr.com">dev@motrr.com</a>.</p>
 
@@ -101,10 +45,10 @@
 <p>The full index of class references can be viewed on the <a href="../../index.html">GalileoControl</a> index page. In this guide you will make use of the following classes:</p>
 
 <ul>
-<li><a href="../../Classes/Galileo.html"><code>Galileo</code></a> &ndash; Defines the gateway singleton object for connecting to Galileo and accessing motion controllers.</li>
-<li><a href="../../Protocols/GalileoDelegate.html"><code>GalileoDelegate</code></a> &ndash; Delegate protocol for notification of connection and disconnection events.</li>
-<li><a href="../../Classes/PositionControl.html"><code>PositionControl</code></a> &ndash; Control Galileo by moving to a specified position.</li>
-<li><a href="../../Classes/VelocityControl.html"><code>VelocityControl</code></a> &ndash; Control Galileo by setting angular velocity.</li>
+<li><a href="../../Classes/GCGalileo.html"><code>GCGalileo</code></a> - Defines the gateway singleton object for connecting to Galileo and accessing motion controllers.</li>
+<li><a href="../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a> - Delegate protocol for notification of connection and disconnection events.</li>
+<li><a href="../../Classes/GCPositionControl.html"><code>GCPositionControl</code></a> - Control Galileo by moving to a specified position.</li>
+<li><a href="[GCVelocityControl](../../Classes/GCVelocityControl.html"><code>GCVelocityControl</code></a>) - Control Galileo by setting angular velocity.</li>
 </ul>
 
 
@@ -117,8 +61,8 @@
 <h3>Sample projects</h3>
 
 <ul>
-<li><p><a href="https://github.com/motrr/HelloWorldGalileo">HelloWorldGalileo</a> &ndash; Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.</p></li>
-<li><p><a href="https://github.com/motrr/UpdateGalileo">UpdateGalileo</a> &ndash; Check for new firmware updates and apply them over the air to Galileo.</p></li>
+<li><p><a href="https://github.com/motrr/HelloWorldGalileo">HelloWorldGalileo</a> - Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.</p></li>
+<li><p><a href="https://github.com/motrr/UpdateGalileo">UpdateGalileo</a> - Check for new firmware updates and apply them over the air to Galileo.</p></li>
 </ul>
 
 
@@ -190,8 +134,9 @@
 <p>The GalileoControl framework also depends on the following Apple frameworks and libraries.</p>
 
 <ul>
-<li>libmxl2.dylib</li>
+<li>libxml2.dylib</li>
 <li>ExternalAccessory.framework</li>
+<li>CoreBluetooth.framework</li>
 </ul>
 
 
@@ -241,7 +186,7 @@
 
 <h2>Connecting to Galileo</h2>
 
-<p>Connecting to Galileo is performed asynchronously. Notification of a succesful connection is provided using the <a href="[GalileoDelegate](../../Protocols/GalileoDelegate.html"><code>GalileoDelegate</code></a>) protocol whilst initiating a connection is done using the <a href="[Galileo](../../Classes/Galileo.html"><code>Galileo</code></a>) shared instance.</p>
+<p>Connecting to Galileo is performed asynchronously. Notification of a succesful connection is provided using the <a href="[GCGalileoDelegate](../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a>) protocol whilst initiating a connection is done using the <a href="[GCGalileo](../../Classes/GCGalileo.html"><code>GCGalileo</code></a>) shared instance. A notification based alternative to the delegate protocol is also available, please refer to the documentation for details.</p>
 
 <ul>
 <li><p>To begin with, ensure you include the <code>GalileoControl.h</code> header in any source files which make use of the GalileoControl framework.</p>
@@ -250,10 +195,10 @@
 </code></pre></li>
 <li><p>To initiate a connection, access the shared Galileo instance and call the <code>waitForConnection</code> method. Typically you would also set the delegate prior to this call.</p>
 
-<pre><code>[Galileo sharedGalileo].delegate = self;
-[[Galileo sharedGalileo] waitForConnection];
+<pre><code>[GCGalileo sharedGalileo].delegate = self;
+[[GCGalileo sharedGalileo] waitForConnection];
 </code></pre></li>
-<li><p>In order to be notified when a connection is established you must also implement the <a href="[GalileoDelegate](../../Protocols/GalileoDelegate.html"><code>GalileoDelegate</code></a>) protocol. The following code snippet alerts the user when Galileo connects by implementing the <code>galileoDidConnect</code> method.</p>
+<li><p>In order to be notified when a connection is established you must also implement the <a href="[GCGalileoDelegate](../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a>) protocol. The following code snippet alerts the user when Galileo connects by implementing the <code>galileoDidConnect</code> method.</p>
 
 <pre><code> - (void) galileoDidConnect
  {
@@ -269,7 +214,7 @@
 
 <pre><code>  - (void) galileoDidDisconnect
  {
-     [[Galileo sharedGalileo] waitForConnection];
+     [[GCGalileo sharedGalileo] waitForConnection];
  }
 </code></pre></li>
 </ul>
@@ -279,32 +224,32 @@
 
 <h2>Moving Galileo</h2>
 
-<p>Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the <code>Galileo</code> shared instance.</p>
+<p>Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the <code>GCGalileo</code> shared instance.</p>
 
 <ul>
-<li><p>An instance of <code>PositionControl</code> is obtained by calling <code>positionControlForAxis:</code>. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.</p>
+<li><p>An instance of <code>GCPositionControl</code> is obtained by calling <code>positionControlForAxis:</code>. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.</p>
 
 <pre><code> - (void) galileoDidConnect
  { 
-     PositionControl* panPositionControl = [[Galileo sharedGalileo] positionControlForAxis:GalileoControlAxisPan];
+     GCPositionControl* panPositionControl = [[GCGalileo sharedGalileo] positionControlForAxis:GCControlAxisPan];
      [panPositionControl incrementTargetPosition:90.0 notifyDelegate:nil waitUntilStationary:NO];
  }
 </code></pre></li>
-<li><p>Velocity control is performed in a similar fasion, using an instance of <a href="../../Classes/VelocityControl.html"><code>VelocityControl</code></a>. The following example starts Galileo rotating the phone around it&rsquo;s tilt axis at 100 degrees per second.</p>
+<li><p>Velocity control is performed in a similar fasion, using an instance of <a href="../../Classes/GCVelocityControl.html"><code>GCVelocityControl</code></a>. The following example starts Galileo rotating the phone around it&rsquo;s tilt axis at 100 degrees per second.</p>
 
-<pre><code> VelocityControl* tiltVelocityControl = [[Galileo sharedGalileo] velocityControlForAxis:GalileoControlAxisTilt];
+<pre><code> GCVelocityControl* tiltVelocityControl = [[GCGalileo sharedGalileo] velocityControlForAxis:GCControlAxisTilt];
  [tiltVelocityControl setTargetVelocity:100.0];
 </code></pre></li>
-<li><p>The library will attempt to switch control modes automatically, however using more than one mode for a single axis requires explicitly instructing the <code>Galileo</code> shared instance to switch modes using the <code>selectMode:forAxis:</code> method.</p>
+<li><p>The library will attempt to switch control modes automatically, however using more than one mode for a single axis requires explicitly instructing the <code>&lt;Galileo&gt;</code> shared instance to switch modes using the <code>selectMode:forAxis:</code> method.</p>
 
-<pre><code>  GalileoControlAxis axis = GalileoControlAxisPan;
+<pre><code>  GCControlAxis axis = GCControlAxisPan;
  //
- VelocityControl* tiltVelocityControl = [[Galileo sharedGalileo] velocityControlForAxis:axis];
- [[Galileo sharedGalileo] selectMode:GalileoModeVelocityControl forAxis:axis];
+ GCVelocityControl* tiltVelocityControl = [[GCGalileo sharedGalileo] velocityControlForAxis:axis];
+ [[GCGalileo sharedGalileo] selectMode:GCModeVelocityControl forAxis:axis];
  [tiltVelocityControl setTargetVelocity:100.0];
  //
- PositionControl* tiltPositionControl = [[Galileo sharedGalileo] positionControlForAxis:axis];
- [[Galileo sharedGalileo] selectMode:GalileoModePositionControl forAxis:axis];
+ GCPositionControl* tiltPositionControl = [[GCGalileo sharedGalileo] positionControlForAxis:axis];
+ [[GCGalileo sharedGalileo] selectMode:GCModePositionControl forAxis:axis];
  [tiltPositionControl incrementTargetPosition:-90 notifyDelegate:nil waitUntilStationary:NO];
 </code></pre></li>
 </ul>
@@ -313,123 +258,14 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-06-19)</span><br />
+						<p><span class="copyright">&copy; 2013 Motrr. All rights reserved. (Last updated: 2013-10-28)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					
 					</div>
 				</div>
 			</div>
 		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
-			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
-				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
-					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
-					
-					window.name = "";
-				}
-				return false;
-			}
-			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
-			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
-			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
-			
-			window.onload = init;
-			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
-			
-		</script>
-
-		<script type="text/javascript">
-		  
-		  var _gaq = _gaq || [];
-		  var pluginUrl = 
-		  '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-		  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-		  _gaq.push(['_setAccount', 'UA-38969470-1']);
-		  _gaq.push(['_trackPageview']);
-		  
-		  (function() {
-		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		  
-		</script>
-
 	</body>
 </html>

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/VelocityControlDelegate.html">
+	<File path="Protocols/GCVelocityControlDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/VelocityControlDelegate</TokenIdentifier>
-			<Abstract type="html">This protocol defines an interface for delegates of a VelocityControl object to be notified when a velocity target has been reached.</Abstract>
-			<DeclaredIn>VelocityControlDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/GCVelocityControlDelegate</TokenIdentifier>
+			<Abstract type="html">This protocol defines an interface for delegates of a GCVelocityControl object to be notified when a velocity target has been reached.</Abstract>
+			<DeclaredIn>GCVelocityControlDelegate.h</DeclaredIn>
+            
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/VelocityControlDelegate/controlDidReachTargetVelocity</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/GCVelocityControlDelegate/controlDidReachTargetVelocity</TokenIdentifier>
 			<Abstract type="html">Notifies the delegate when Galileo has reached the specified target velocity.</Abstract>
-			<DeclaredIn>VelocityControlDelegate.h</DeclaredIn>			
+			<DeclaredIn>GCVelocityControlDelegate.h</DeclaredIn>
 			
 			<Declaration>- (void)controlDidReachTargetVelocity</Declaration>
 			
@@ -23,5 +24,6 @@
             <NodeRef refid="9"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

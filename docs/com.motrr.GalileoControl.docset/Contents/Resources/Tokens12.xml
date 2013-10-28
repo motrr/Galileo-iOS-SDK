@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GCHardwareVersion.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GCHardwareVersion</TokenIdentifier>
+			<Abstract type="html">Used to distinguish between different Galileo hardware versions.</Abstract>
+			<DeclaredIn>GCCommon.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCHardwareVersion30Pin</TokenIdentifier>
+            <Abstract type="html">30-pin hardware model, compatible with older iOS devices.</Abstract>
+            <Declaration>GCHardwareVersion30Pin</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCHardwareVersionBluetooth</TokenIdentifier>
+            <Abstract type="html">Bluetooth hardware model, compatible with iOS devices that support Blueotooth LE (Low Engergy).</Abstract>
+            <Declaration>GCHardwareVersionBluetooth</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+	</File>
+</Tokens>

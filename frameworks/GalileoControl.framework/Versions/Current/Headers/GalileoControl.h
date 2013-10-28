@@ -4,15 +4,15 @@
 /** This header is a convenience header for importing all the Galileo public interface classes.
  */
 
-#import "GalileoCommon.h"
+#import "GCCommon.h"
 //
-#import "GalileoDelegate.h"
-#import "Galileo.h"
+#import "GCGalileoDelegate.h"
+#import "GCGalileo.h"
 //
-#import "VelocityControlDelegate.h"
-#import "VelocityControl.h"
+#import "GCVelocityControlDelegate.h"
+#import "GCVelocityControl.h"
 //
-#import "PositionControlDelegate.h"
-#import "PositionControl.h"
+#import "GCPositionControlDelegate.h"
+#import "GCPositionControl.h"
 //
-#import "FirmwareManager.h"
+#import "GCFirmwareManager.h"

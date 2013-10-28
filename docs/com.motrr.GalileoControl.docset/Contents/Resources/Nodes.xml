@@ -30,8 +30,8 @@
 				</Node>
 				
 				
-				
-				<Node type="folder">
+                
+				<Node>
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
@@ -42,49 +42,270 @@
 					</Subnodes>
 				</Node>
 				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						
+					</Subnodes>
+				</Node>
+				
 			</Subnodes>
         </Node>
     </TOC>
 	<Library>
-		<Node id="1">
-			<Name>Galileo iOS Quick Start Guide</Name>
-			<Path>docs/src/Galileo iOS Quick Start Guide.html</Path>
-		</Node>
-		<Node id="2">
-			<Name>Useful Definitions</Name>
-			<Path>docs/src/Useful Definitions.html</Path>
-		</Node>
+		<Node id="1" type="section">
+            <Name>Galileo iOS Quick Start Guide</Name>
+            <Path>docs/src/Galileo iOS Quick Start Guide.html</Path>
+            
+        </Node>
+		<Node id="2" type="section">
+            <Name>NSNotifications</Name>
+            <Path>docs/src/NSNotifications.html</Path>
+            
+        </Node>
 		
-		<Node id="3">
-			<Name>FirmwareManager</Name>
-			<Path>Classes/FirmwareManager.html</Path>
-		</Node>
-		<Node id="4">
-			<Name>Galileo</Name>
-			<Path>Classes/Galileo.html</Path>
-		</Node>
-		<Node id="5">
-			<Name>PositionControl</Name>
-			<Path>Classes/PositionControl.html</Path>
-		</Node>
-		<Node id="6">
-			<Name>VelocityControl</Name>
-			<Path>Classes/VelocityControl.html</Path>
-		</Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>GCFirmwareManager</Name>
+            <Path>Classes/GCFirmwareManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GCFirmwareManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GCFirmwareManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCFirmwareManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>GCGalileo</Name>
+            <Path>Classes/GCGalileo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GCGalileo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GCGalileo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/GCGalileo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCGalileo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCGalileo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>GCPositionControl</Name>
+            <Path>Classes/GCPositionControl.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GCPositionControl.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GCPositionControl.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/GCPositionControl.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCPositionControl.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>GCVelocityControl</Name>
+            <Path>Classes/GCVelocityControl.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GCVelocityControl.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GCVelocityControl.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/GCVelocityControl.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
 		
 		
-		<Node id="7">
-			<Name>GalileoDelegate</Name>
-			<Path>Protocols/GalileoDelegate.html</Path>
-		</Node>
-		<Node id="8">
-			<Name>PositionControlDelegate</Name>
-			<Path>Protocols/PositionControlDelegate.html</Path>
-		</Node>
-		<Node id="9">
-			<Name>VelocityControlDelegate</Name>
-			<Path>Protocols/VelocityControlDelegate.html</Path>
-		</Node>
+        <Node id="7" type="file" documentType="reference">
+            <Name>GCGalileoDelegate</Name>
+            <Path>Protocols/GCGalileoDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/GCGalileoDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/GCGalileoDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/GCGalileoDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>GCPositionControlDelegate</Name>
+            <Path>Protocols/GCPositionControlDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/GCPositionControlDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/GCPositionControlDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/GCPositionControlDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>GCVelocityControlDelegate</Name>
+            <Path>Protocols/GCVelocityControlDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/GCVelocityControlDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/GCVelocityControlDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/GCVelocityControlDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="10" type="file" documentType="reference">
+            <Name>GCControlAxis</Name>
+            <Path>Constants/GCControlAxis.html</Path>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>GCFirmwareUpdateCheckOutcome</Name>
+            <Path>Constants/GCFirmwareUpdateCheckOutcome.html</Path>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>GCHardwareVersion</Name>
+            <Path>Constants/GCHardwareVersion.html</Path>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>GCLogLevel</Name>
+            <Path>Constants/GCLogLevel.html</Path>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>GCMode</Name>
+            <Path>Constants/GCMode.html</Path>
+            
+        </Node>
 		
 	</Library>
 </DocSetNodes>

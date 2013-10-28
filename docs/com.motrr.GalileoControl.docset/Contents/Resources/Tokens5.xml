@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PositionControl.html">
+	<File path="Classes/GCPositionControl.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PositionControl</TokenIdentifier>
-			<Abstract type="html">The PositionControl object allows you to control Galileo&apos;s rotational position for a given axis. You can access the instance through the positionControlForAxis: method of the Galileo singleton instance.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GCPositionControl</TokenIdentifier>
+			<Abstract type="html">The GCPositionControl object allows you to control Galileo&apos;s rotational position for a given axis. You can access the instance through the positionControlForAxis: method of the Galileo singleton instance.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+            
 			
 			<NodeRef refid="5"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setSmallestAngleIncrement:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setSmallestAngleIncrement:</TokenIdentifier>
 			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
 			
@@ -24,9 +25,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/smallestAngleIncrement</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/smallestAngleIncrement</TokenIdentifier>
 			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
 			
@@ -36,9 +37,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/smallestAngleIncrement</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/smallestAngleIncrement</TokenIdentifier>
 			<Abstract type="html">The smallest angle, in degrees, that the accessory can reliably move.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double smallestAngleIncrement</Declaration>
 			
@@ -48,9 +49,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setHoldPositionWhenStationary:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setHoldPositionWhenStationary:</TokenIdentifier>
 			<Abstract type="html">Indicates whether the motors should actively hold position whilst stationary.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) BOOL holdPositionWhenStationary</Declaration>
 			
@@ -60,9 +61,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/holdPositionWhenStationary</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/holdPositionWhenStationary</TokenIdentifier>
 			<Abstract type="html">Indicates whether the motors should actively hold position whilst stationary.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) BOOL holdPositionWhenStationary</Declaration>
 			
@@ -72,9 +73,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/holdPositionWhenStationary</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/holdPositionWhenStationary</TokenIdentifier>
 			<Abstract type="html">Indicates whether the motors should actively hold position whilst stationary.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) BOOL holdPositionWhenStationary</Declaration>
 			
@@ -84,9 +85,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTorque:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setTorque:</TokenIdentifier>
 			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) double torque</Declaration>
 			
@@ -96,9 +97,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/torque</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/torque</TokenIdentifier>
 			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) double torque</Declaration>
 			
@@ -108,9 +109,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/torque</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/torque</TokenIdentifier>
 			<Abstract type="html">Motor torque setting as a percentage of maximum possible.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) double torque</Declaration>
 			
@@ -120,9 +121,225 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setCurrentPosition:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setVelocity:</TokenIdentifier>
+			<Abstract type="html">Velocity, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/velocity</TokenIdentifier>
+			<Abstract type="html">Velocity, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/velocity</TokenIdentifier>
+			<Abstract type="html">Velocity, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) double velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setMaxVelocity:</TokenIdentifier>
+			<Abstract type="html">The maximum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double maxVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/maxVelocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/maxVelocity</TokenIdentifier>
+			<Abstract type="html">The maximum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double maxVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/maxVelocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/maxVelocity</TokenIdentifier>
+			<Abstract type="html">The maximum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double maxVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/maxVelocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setMinVelocity:</TokenIdentifier>
+			<Abstract type="html">The minimum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/minVelocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/minVelocity</TokenIdentifier>
+			<Abstract type="html">The minimum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/minVelocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/minVelocity</TokenIdentifier>
+			<Abstract type="html">The minimum velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/minVelocity</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setAcceleration:</TokenIdentifier>
+			<Abstract type="html">Acceleration, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) double acceleration</Declaration>
+			
+			
+			<Anchor>//api/name/acceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/acceleration</TokenIdentifier>
+			<Abstract type="html">Acceleration, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) double acceleration</Declaration>
+			
+			
+			<Anchor>//api/name/acceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/acceleration</TokenIdentifier>
+			<Abstract type="html">Acceleration, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) double acceleration</Declaration>
+			
+			
+			<Anchor>//api/name/acceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setMaxAcceleration:</TokenIdentifier>
+			<Abstract type="html">The maximum acceleration Galileo is capable of, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double maxAcceleration</Declaration>
+			
+			
+			<Anchor>//api/name/maxAcceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/maxAcceleration</TokenIdentifier>
+			<Abstract type="html">The maximum acceleration Galileo is capable of, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double maxAcceleration</Declaration>
+			
+			
+			<Anchor>//api/name/maxAcceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/maxAcceleration</TokenIdentifier>
+			<Abstract type="html">The maximum acceleration Galileo is capable of, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double maxAcceleration</Declaration>
+			
+			
+			<Anchor>//api/name/maxAcceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setMinAcceleration:</TokenIdentifier>
+			<Abstract type="html">The minimum acceleration Galileo is capable of, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minAcceleration</Declaration>
+			
+			
+			<Anchor>//api/name/minAcceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/minAcceleration</TokenIdentifier>
+			<Abstract type="html">The minimum acceleration Galileo is capable of, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minAcceleration</Declaration>
+			
+			
+			<Anchor>//api/name/minAcceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/minAcceleration</TokenIdentifier>
+			<Abstract type="html">The minimum acceleration Galileo is capable of, in degrees per second per second.</Abstract>
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) double minAcceleration</Declaration>
+			
+			
+			<Anchor>//api/name/minAcceleration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setCurrentPosition:</TokenIdentifier>
 			<Abstract type="html">The current position, in degress.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
 			
@@ -132,9 +349,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/currentPosition</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/currentPosition</TokenIdentifier>
 			<Abstract type="html">The current position, in degress.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
 			
@@ -144,9 +361,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/currentPosition</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/currentPosition</TokenIdentifier>
 			<Abstract type="html">The current position, in degress.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double currentPosition</Declaration>
 			
@@ -156,9 +373,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setTargetPosition:</TokenIdentifier>
 			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
 			
@@ -168,9 +385,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/targetPosition</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/targetPosition</TokenIdentifier>
 			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
 			
@@ -180,9 +397,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/targetPosition</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/targetPosition</TokenIdentifier>
 			<Abstract type="html">The target position, in degress, you wish to set the accessory to.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double targetPosition</Declaration>
 			
@@ -192,9 +409,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setAtTargetPosition:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setAtTargetPosition:</TokenIdentifier>
 			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
 			
@@ -204,9 +421,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/isAtTargetPosition</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/isAtTargetPosition</TokenIdentifier>
 			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
 			
@@ -216,9 +433,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PositionControl/atTargetPosition</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GCPositionControl/atTargetPosition</TokenIdentifier>
 			<Abstract type="html">True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, getter=isAtTargetPosition) BOOL atTargetPosition</Declaration>
 			
@@ -228,9 +445,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/resetOriginToCurrentPosition</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/resetOriginToCurrentPosition</TokenIdentifier>
 			<Abstract type="html">Resets the origin to the current position.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>- (void)resetOriginToCurrentPosition</Declaration>
 			
@@ -240,9 +457,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:completionBlock:waitUntilStationary:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setTargetPosition:completionBlock:waitUntilStationary:</TokenIdentifier>
 			<Abstract type="html">Rotate Galileo to a new position.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>- (void)setTargetPosition:(double)newTargetPosition completionBlock:(void ( ^ ) ( BOOL wasCommandPreempted ))completionBlock waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
 			<Parameters>
@@ -263,11 +480,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/setTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/setTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
 			<Abstract type="html">Rotate Galileo to a new position.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
-			<Declaration>- (void)setTargetPosition:(double)newTargetPosition notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Declaration>- (void)setTargetPosition:(double)newTargetPosition notifyDelegate:(id&lt;GCPositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>newTargetPosition</Name>
@@ -286,9 +503,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/incrementTargetPosition:completionBlock:waitUntilStationary:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/incrementTargetPosition:completionBlock:waitUntilStationary:</TokenIdentifier>
 			<Abstract type="html">Rotate Galileo to a new position, relative to it&apos;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
 			<Declaration>- (void)incrementTargetPosition:(double)amount completionBlock:(void ( ^ ) ( BOOL wasCommandPreempted ))completionBlock waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
 			<Parameters>
@@ -309,11 +526,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PositionControl/incrementTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GCPositionControl/incrementTargetPosition:notifyDelegate:waitUntilStationary:</TokenIdentifier>
 			<Abstract type="html">Rotate Galileo to a new position, relative to it&apos;s current target position. Rotation is clockwise for positive valued increment amounts and anti-clockwise otherwise.</Abstract>
-			<DeclaredIn>PositionControl.h</DeclaredIn>			
+			<DeclaredIn>GCPositionControl.h</DeclaredIn>
 			
-			<Declaration>- (void)incrementTargetPosition:(double)amount notifyDelegate:(id&lt;PositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
+			<Declaration>- (void)incrementTargetPosition:(double)amount notifyDelegate:(id&lt;GCPositionControlDelegate&gt;)delegate waitUntilStationary:(BOOL)waitUntilStationary</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>amount</Name>
@@ -331,5 +548,6 @@
             <NodeRef refid="5"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

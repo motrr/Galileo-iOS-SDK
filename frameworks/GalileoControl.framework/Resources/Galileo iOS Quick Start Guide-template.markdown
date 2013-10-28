@@ -16,10 +16,10 @@ First time developers should read through Apple's introductory guide on iOS app 
 
 The full index of class references can be viewed on the [GalileoControl](../../index.html) index page. In this guide you will make use of the following classes:
 
- * [`Galileo`](<Galileo>) - Defines the gateway singleton object for connecting to Galileo and accessing motion controllers.
- * `<GalileoDelegate>` - Delegate protocol for notification of connection and disconnection events.
- * [`PositionControl`](<PositionControl>) - Control Galileo by moving to a specified position.
- * `<VelocityControl>` - Control Galileo by setting angular velocity.
+ * [`GCGalileo`](<GCGalileo>) - Defines the gateway singleton object for connecting to Galileo and accessing motion controllers.
+ * `<GCGalileoDelegate>` - Delegate protocol for notification of connection and disconnection events.
+ * [`GCPositionControl`](<GCPositionControl>) - Control Galileo by moving to a specified position.
+ * [`GCVelocityControl`](<GCVelocityControl>) - Control Galileo by setting angular velocity.
 
 ### Community
 
@@ -89,8 +89,9 @@ Your Xcode project will need to be configured to include the GalileoControl fram
 
 The GalileoControl framework also depends on the following Apple frameworks and libraries.
 
- - libmxl2.dylib
+ - libxml2.dylib
  - ExternalAccessory.framework
+ - CoreBluetooth.framework
  
 Adding them to your project can be done using the following steps.
  
@@ -128,7 +129,7 @@ Configure your Info.plist with the following steps.
 <a name="connecting"/></a>
 ## Connecting to Galileo
 
-Connecting to Galileo is performed asynchronously. Notification of a succesful connection is provided using the [`GalileoDelegate`](<GalileoDelegate>) protocol whilst initiating a connection is done using the [`Galileo`](<Galileo>) shared instance.
+Connecting to Galileo is performed asynchronously. Notification of a succesful connection is provided using the [`GCGalileoDelegate`](<GCGalileoDelegate>) protocol whilst initiating a connection is done using the [`GCGalileo`](<GCGalileo>) shared instance. A notification based alternative to the delegate protocol is also available, please refer to the documentation for details.
 
 
  - To begin with, ensure you include the `GalileoControl.h` header in any source files which make use of the GalileoControl framework.
@@ -137,10 +138,10 @@ Connecting to Galileo is performed asynchronously. Notification of a succesful c
 
  -  To initiate a connection, access the shared Galileo instance and call the `waitForConnection` method. Typically you would also set the delegate prior to this call.
 
-        [Galileo sharedGalileo].delegate = self;
-        [[Galileo sharedGalileo] waitForConnection];
+        [GCGalileo sharedGalileo].delegate = self;
+        [[GCGalileo sharedGalileo] waitForConnection];
         
- - In order to be notified when a connection is established you must also implement the [`GalileoDelegate`](<GalileoDelegate>) protocol. The following code snippet alerts the user when Galileo connects by implementing the `galileoDidConnect` method.
+ - In order to be notified when a connection is established you must also implement the [`GCGalileoDelegate`](<GCGalileoDelegate>) protocol. The following code snippet alerts the user when Galileo connects by implementing the `galileoDidConnect` method.
 
         - (void) galileoDidConnect
         {
@@ -156,7 +157,7 @@ Connecting to Galileo is performed asynchronously. Notification of a succesful c
  
          - (void) galileoDidDisconnect
         {
-            [[Galileo sharedGalileo] waitForConnection];
+            [[GCGalileo sharedGalileo] waitForConnection];
         }
 
  
@@ -164,29 +165,29 @@ Connecting to Galileo is performed asynchronously. Notification of a succesful c
 <a name="moving"/></a>
 ## Moving Galileo
 
-Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the `<Galileo>` shared instance.
+Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the `<GCGalileo>` shared instance.
 
- - An instance of `<PositionControl>` is obtained by calling `positionControlForAxis:`. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.
+ - An instance of `<GCPositionControl>` is obtained by calling `positionControlForAxis:`. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.
 
         - (void) galileoDidConnect
         { 
-            PositionControl* panPositionControl = [[Galileo sharedGalileo] positionControlForAxis:GalileoControlAxisPan];
+            GCPositionControl* panPositionControl = [[GCGalileo sharedGalileo] positionControlForAxis:GCControlAxisPan];
             [panPositionControl incrementTargetPosition:90.0 notifyDelegate:nil waitUntilStationary:NO];
         }
         
- - Velocity control is performed in a similar fasion, using an instance of `<VelocityControl>`. The following example starts Galileo rotating the phone around it's tilt axis at 100 degrees per second.
+ - Velocity control is performed in a similar fasion, using an instance of `<GCVelocityControl>`. The following example starts Galileo rotating the phone around it's tilt axis at 100 degrees per second.
 
-        VelocityControl* tiltVelocityControl = [[Galileo sharedGalileo] velocityControlForAxis:GalileoControlAxisTilt];
+        GCVelocityControl* tiltVelocityControl = [[GCGalileo sharedGalileo] velocityControlForAxis:GCControlAxisTilt];
         [tiltVelocityControl setTargetVelocity:100.0];
         
  - The library will attempt to switch control modes automatically, however using more than one mode for a single axis requires explicitly instructing the `<Galileo>` shared instance to switch modes using the `selectMode:forAxis:` method.
  
-         GalileoControlAxis axis = GalileoControlAxisPan;
+         GCControlAxis axis = GCControlAxisPan;
         //
-        VelocityControl* tiltVelocityControl = [[Galileo sharedGalileo] velocityControlForAxis:axis];
-        [[Galileo sharedGalileo] selectMode:GalileoModeVelocityControl forAxis:axis];
+        GCVelocityControl* tiltVelocityControl = [[GCGalileo sharedGalileo] velocityControlForAxis:axis];
+        [[GCGalileo sharedGalileo] selectMode:GCModeVelocityControl forAxis:axis];
         [tiltVelocityControl setTargetVelocity:100.0];
         //
-        PositionControl* tiltPositionControl = [[Galileo sharedGalileo] positionControlForAxis:axis];
-        [[Galileo sharedGalileo] selectMode:GalileoModePositionControl forAxis:axis];
+        GCPositionControl* tiltPositionControl = [[GCGalileo sharedGalileo] positionControlForAxis:axis];
+        [[GCGalileo sharedGalileo] selectMode:GCModePositionControl forAxis:axis];
         [tiltPositionControl incrementTargetPosition:-90 notifyDelegate:nil waitUntilStationary:NO];
