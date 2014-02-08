@@ -44,5 +44,15 @@ Outcome after checking for a Galileo firmeware update.</Abstract>
             <NodeRef refid="11"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GCFirmwareUpdateDeviceUnavailable</TokenIdentifier>
+            <Abstract type="html">Device is not connected, check can&apos;t continue.</Abstract>
+            <Declaration>GCFirmwareUpdateDeviceUnavailable</Declaration>
+            
+            <DeclaredIn>GCCommon.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
 	</File>
 </Tokens>

@@ -1,3 +1,11 @@
+###0.9.1
+
+Acceleration improvements and 64-bit support.
+
+* Added support for 64-bit.
+* Max acceleration permitted now greatly increased.
+* Various bugfixes.
+
 ##0.9
 
 Added support for BLE (Bluetooth Low Energy) Galileo models.

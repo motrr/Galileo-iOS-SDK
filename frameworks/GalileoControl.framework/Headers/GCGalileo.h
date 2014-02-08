@@ -138,6 +138,12 @@
 /// @name Managing Galileo firmware
 ///---------------------------------------------------------------------------------------
 
+/** Check if the device has the Motrr app installed.
+ 
+ @discussion This property is a good proxy for determining if the user is a Galileo user or not. All Galileo users are instructed to download and install the Motrr app upon purchasing their Galileo.
+ */
+@property (nonatomic, readonly) BOOL isMotrrAppInstalled;
+
 /** Manage Galileo's firmware.
  */
 @property (nonatomic, readonly) GCFirmwareManager* firmwareManager;
