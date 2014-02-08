@@ -66,6 +66,8 @@ typedef NS_ENUM(NSUInteger, GCFirmwareUpdateCheckOutcome) {
     GCFirmwareUpdateCheckOutcomeAlreadyUpToDate = 0x01,
     /** Check succeeded and a more recent firmware version is available. */
     GCFirmwareUpdateCheckOutcomeUpdateAvailable = 0x02,
+    /** Device is not connected, check can't continue. */
+    GCFirmwareUpdateDeviceUnavailable = 0x03,
 };
 
 /** Posted when Galileo becomes connected and available for your application to use.

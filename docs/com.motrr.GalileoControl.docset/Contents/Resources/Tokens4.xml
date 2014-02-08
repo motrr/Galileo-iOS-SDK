@@ -384,6 +384,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setIsMotrrAppInstalled:</TokenIdentifier>
+			<Abstract type="html">Check if the device has the Motrr app installed.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isMotrrAppInstalled</Declaration>
+			
+			
+			<Anchor>//api/name/isMotrrAppInstalled</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/isMotrrAppInstalled</TokenIdentifier>
+			<Abstract type="html">Check if the device has the Motrr app installed.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isMotrrAppInstalled</Declaration>
+			
+			
+			<Anchor>//api/name/isMotrrAppInstalled</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/isMotrrAppInstalled</TokenIdentifier>
+			<Abstract type="html">Check if the device has the Motrr app installed.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isMotrrAppInstalled</Declaration>
+			
+			
+			<Anchor>//api/name/isMotrrAppInstalled</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setFirmwareManager:</TokenIdentifier>
 			<Abstract type="html">Manage Galileo&apos;s firmware.</Abstract>
 			<DeclaredIn>GCGalileo.h</DeclaredIn>
