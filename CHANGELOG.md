@@ -1,3 +1,7 @@
+###0.9.2
+
+Fixed bug when toggling bluetooth on/off.
+
 ###0.9.1
 
 Acceleration improvements and 64-bit support.

@@ -63,6 +63,7 @@
 <ul>
 <li><p><a href="https://github.com/motrr/HelloWorldGalileo">HelloWorldGalileo</a> - Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.</p></li>
 <li><p><a href="https://github.com/motrr/UpdateGalileo">UpdateGalileo</a> - Check for new firmware updates and apply them over the air to Galileo.</p></li>
+<li><p><a href="https://github.com/motrr/RemoteControlGalileo">RemoteControlGalileo</a> - Two-way video calling and remote control over WiFi.</p></li>
 </ul>
 
 
@@ -89,7 +90,7 @@
 <ul>
 <li><p>Navigate to the root of you git repository and execute the following commands. This will create and initialise the submodule and commit the changes.</p>
 
-<pre><code> git submodule add git@github.com:motrr/Galileo-iOS-SDK.git
+<pre><code> git submodule add https://github.com/motrr/Galileo-iOS-SDK.git
  git commit -m "Added Galileo iOS SDK submodule"
 </code></pre></li>
 <li><p>At some point in the future you may wish to update you project&rsquo;s copy of the SDK to the latest version. To do this, again navigate to the root directory and execture the following.</p>
@@ -186,7 +187,7 @@
 
 <h2>Connecting to Galileo</h2>
 
-<p>Connecting to Galileo is performed asynchronously. Notification of a succesful connection is provided using the <a href="[GCGalileoDelegate](../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a>) protocol whilst initiating a connection is done using the <a href="[GCGalileo](../../Classes/GCGalileo.html"><code>GCGalileo</code></a>) shared instance. A notification based alternative to the delegate protocol is also available, please refer to the documentation for details.</p>
+<p>Connecting to Galileo is performed asynchronously. Notification of a succesful connection is provided using the <a href="../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a> protocol whilst initiating a connection is done using the <a href="../../Classes/GCGalileo.html"><code>GCGalileo</code></a> shared instance. A notification based alternative to the delegate protocol is also available, please refer to the documentation for details.</p>
 
 <ul>
 <li><p>To begin with, ensure you include the <code>GalileoControl.h</code> header in any source files which make use of the GalileoControl framework.</p>
@@ -198,7 +199,7 @@
 <pre><code>[GCGalileo sharedGalileo].delegate = self;
 [[GCGalileo sharedGalileo] waitForConnection];
 </code></pre></li>
-<li><p>In order to be notified when a connection is established you must also implement the <a href="[GCGalileoDelegate](../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a>) protocol. The following code snippet alerts the user when Galileo connects by implementing the <code>galileoDidConnect</code> method.</p>
+<li><p>In order to be notified when a connection is established you must also implement the <a href="../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a> protocol. The following code snippet alerts the user when Galileo connects by implementing the <code>galileoDidConnect</code> method.</p>
 
 <pre><code> - (void) galileoDidConnect
  {
@@ -224,10 +225,10 @@
 
 <h2>Moving Galileo</h2>
 
-<p>Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the <code>GCGalileo</code> shared instance.</p>
+<p>Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the <a href="../../Classes/GCGalileo.html"><code>GCGalileo</code></a> shared instance.</p>
 
 <ul>
-<li><p>An instance of <code>GCPositionControl</code> is obtained by calling <code>positionControlForAxis:</code>. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.</p>
+<li><p>An instance of <a href="../../Classes/GCPositionControl.html"><code>GCPositionControl</code></a> is obtained by calling <code>positionControlForAxis:</code>. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.</p>
 
 <pre><code> - (void) galileoDidConnect
  { 
@@ -235,7 +236,7 @@
      [panPositionControl incrementTargetPosition:90.0 notifyDelegate:nil waitUntilStationary:NO];
  }
 </code></pre></li>
-<li><p>Velocity control is performed in a similar fasion, using an instance of <a href="../../Classes/GCVelocityControl.html"><code>GCVelocityControl</code></a>. The following example starts Galileo rotating the phone around it&rsquo;s tilt axis at 100 degrees per second.</p>
+<li><p>Velocity control is performed in a similar fasion, using an instance of <code>GCVelocityControl</code>. The following example starts Galileo rotating the phone around it&rsquo;s tilt axis at 100 degrees per second.</p>
 
 <pre><code> GCVelocityControl* tiltVelocityControl = [[GCGalileo sharedGalileo] velocityControlForAxis:GCControlAxisTilt];
  [tiltVelocityControl setTargetVelocity:100.0];
@@ -258,7 +259,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Motrr. All rights reserved. (Last updated: 2014-02-08)</span><br />
+						<p><span class="copyright">&copy; 2014 Motrr. All rights reserved. (Last updated: 2014-03-27)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

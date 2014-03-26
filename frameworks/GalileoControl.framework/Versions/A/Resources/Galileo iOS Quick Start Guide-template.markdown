@@ -31,6 +31,8 @@ A developer blog and forum will be released shortly, check back soon at our [dev
  * [HelloWorldGalileo](https://github.com/motrr/HelloWorldGalileo) - Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.
   
  * [UpdateGalileo](https://github.com/motrr/UpdateGalileo) - Check for new firmware updates and apply them over the air to Galileo.
+ 
+ * [RemoteControlGalileo](https://github.com/motrr/RemoteControlGalileo) - Two-way video calling and remote control over WiFi.
 
 <a name="installing"/></a>
 ## Installing the SDK
@@ -50,7 +52,7 @@ This method assumes you are using git for source control and have a git reposito
 
  - Navigate to the root of you git repository and execute the following commands. This will create and initialise the submodule and commit the changes.
  
-        git submodule add git@github.com:motrr/Galileo-iOS-SDK.git
+        git submodule add https://github.com/motrr/Galileo-iOS-SDK.git
         git commit -m "Added Galileo iOS SDK submodule"
         
  - At some point in the future you may wish to update you project's copy of the SDK to the latest version. To do this, again navigate to the root directory and execture the following.

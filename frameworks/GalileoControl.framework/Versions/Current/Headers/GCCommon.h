@@ -1,7 +1,7 @@
 //  Created by Chris Harding on 11/07/2012.
 //  Copyright (c) 2012 MOTRR LLC. All rights reserved.
 //
-/** This header defines enumerations and constants common throughout the framework and required in code that makes use of it. Documentation is available in the "Useful Definitions" file, since appledoc does not support constants at the time of writing.
+/** This header defines enumerations and constants common throughout the framework and required in code that makes use of it.
  */
 
 #define SIMULATE_ACCESSORY 0 
