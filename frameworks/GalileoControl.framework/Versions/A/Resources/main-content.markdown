@@ -4,7 +4,7 @@ The GalileoControl framework can be downloaded manually in either [.zip](https:/
 
 Git users can instead add the SDK repository as a submodule by executing the following command in the repository root.
 
-        git submodule add git://github.com/motrr/Galileo-iOS-SDK.git
+        git submodule add https://github.com/motrr/Galileo-iOS-SDK.git
         git commit -m "Added Galileo iOS SDK submodule"
 
 ## Follow the Quick Start Guide
@@ -24,3 +24,5 @@ Our sample projects should help you make more advanced use of the API. More comi
  * [HelloWorldGalileo](https://github.com/motrr/HelloWorldGalileo) - Connect to Galileo and output simple pan and tilt commands when on-screen buttons are pressed.
  
  * [UpdateGalileo](https://github.com/motrr/UpdateGalileo) - Check for new firmware updates and apply them over the air to Galileo.
+ 
+ * [RemoteControlGalileo](https://github.com/motrr/RemoteControlGalileo) - Two-way video calling and remote control over WiFi.
