@@ -23,7 +23,7 @@
  */
 @property (nonatomic, readonly) double smallestAngleIncrement;
 
-/** Indicates whether the motors should actively hold position whilst stationary.
+/** Indicates whether the motors should actively hold position when Galileo is not moving.
  
  @discussion When the value of this property is `NO`, the motors will idle when stationary, reducing power consumption and permitting the user to manually rotate the device. This is the default setting.
  
@@ -39,25 +39,25 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
  */
 @property (nonatomic) double torque;
 
-/** Velocity, in degrees per second.
- @discussion Galileo will attempt to accelerate up to and down from this velocity during movement. Galileo will not exceed this velocity. When modifying this property, be sure that the magitude does not exceed `maxVelocity` for correct operation.
+/** Speed, in degrees per second. Positive valued (negative values will be normalised).
+ @discussion Galileo will attempt to accelerate up to and down from this speed during movement. Galileo will not exceed this speed. When modifying this property, be sure that the magitude remains with interval defined by `minSpeed` and `maxSpeed`. Illegal values will be normalised to within this range.
  
- It is not advisible to combine very small values of `velocity` with very large values of `acceleration`, since this exerts a computational burden on the Galileo and can lead to errors.
+  @warning Small values of `speed` will result in the estimated position drifting over time during motion. This is due to computational constracaints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.
  */
-@property (nonatomic) double velocity;
+@property (nonatomic) double speed;
 
-/** The maximum velocity Galileo is able to move at, in degrees per second.
+/** The maximum speed Galileo is able to move at, in degrees per second.
  */
-@property (nonatomic, readonly) double maxVelocity;
+@property (nonatomic, readonly) double maxSpeed;
 
-/** The minimum velocity Galileo is able to move at, in degrees per second.
- */
-@property (nonatomic, readonly) double minVelocity;
-
-/** Acceleration, in degrees per second per second.
- @discussion During movement, Galileo will accelerate and decelerate up to and down from the specified velocity at this rate. When modifying this property, be sure that the magitude does not exceed `maxAcceleration` for correct operation.
+/** The minimum speed Galileo is able to move at, in degrees per second.
  
- It is not advisible to combine very small values of `velocity` with very large values of `acceleration`, since this exerts a computational burden on the Galileo and can lead to errors.
+  @warning Small values of `speed` will result in the estimated position drifting over time during motion. This is due to computational constracaints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.
+ */
+@property (nonatomic, readonly) double minSpeed;
+
+/** Acceleration, in degrees per second per second. Positive valued (negative values will be normalised).
+ @discussion During movement, Galileo will accelerate and decelerate up to and down from the specified velocity at this rate. When modifying this property, be sure that the magitude remains with interval defined by `minAcceleration` and `maxAcceleration`. Illegal values will be normalised to within this range.
  */
 @property (nonatomic) double acceleration;
 
@@ -77,7 +77,7 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
 /** The current position, in degress. */
 @property (nonatomic, readonly) double currentPosition;
 
-/** The target position, in degress, you wish to set the accessory to. */
+/** The target position, in degress, the accessory is set to. */
 @property (nonatomic, readonly) double targetPosition;
 
 /** True if the accessory is idle at the target position. False if the accessory is still moving in an attempt to reach the target postion. */
@@ -90,9 +90,10 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
 
 /** Resets the origin to the current position.
  
+ @return TRUE if the reset was sucessful. FALSE if reset failed due to device still in motion.
  @discussion After calling this function, all future absolute commands will be in reference to the current position. It is not recommended that you reset the origin whilst the accessory is in motion, therefore you should check the value of `atTargetPosition` before calling this method.
  */
-- (void) resetOriginToCurrentPosition;
+- (BOOL) resetOriginToCurrentPosition;
 
 
 ///---------------------------------------------------------------------------------------
@@ -108,6 +109,8 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
  
  If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
  
+ Setting target position using absolute control commands will use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on the shortest path to the target position.
+ 
  @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
  */
 - (void) setTargetPosition: (double) newTargetPosition completionBlock:(void (^)(BOOL wasCommandPreempted)) completionBlock waitUntilStationary: (BOOL) waitUntilStationary;
@@ -121,6 +124,8 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
  @discussion If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a delegate is provided then it will be notified either when the target is reached or when the command is preempted.
  
  If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
+ 
+  Setting target position using absolute control commands will use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on the shortest path to the target position.
  
  @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
  */
@@ -141,6 +146,8 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
  
  If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
  
+  Setting target position using relative control commands will NOT use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on if the target position is greater than or less than the current position.
+ 
  @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
  */
 - (void) incrementTargetPosition: (double) amount completionBlock:(void (^)(BOOL wasCommandPreempted)) completionBlock waitUntilStationary: (BOOL) waitUntilStationary;
@@ -153,6 +160,8 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
  @discussion If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a delegate is provided then it will be notified either when the target is reached or when the command is preempted.
  
  If `waitUntilStationary` is `TRUE` then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.
+ 
+ Setting target position using relative control commands will NOT use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on if the target position is greater than or less than the current position.
  
   @warning You should not call this method from the main thread with `waitUntilStationary` set to `TRUE`. This will lock up the device since some accessory events are processed on the main thread.
  */
