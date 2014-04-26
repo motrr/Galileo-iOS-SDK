@@ -1,4 +1,4 @@
-Welcome to the Galileo iOS Quick Start Guide for developers. The following information should help you get started with building Galileo compatible applications on the iOS platform. The examples in this guide were built using Xcode 5.0.2 and have been tested with iOS SDK 5.0.1 and later. Comments, corrections and suggestions should be sent to [dev@motrr.com](mailto:dev@motrr.com).
+Welcome to the Galileo iOS Quick Start Guide for developers. The following information should help you get started with building Galileo compatible applications on the iOS platform. The examples in this guide were built using Xcode 5.1 and have been tested with iOS SDK 7.0 and later. Comments, corrections and suggestions should be sent to [dev@motrr.com](mailto:dev@motrr.com).
 
 First time developers should read through Apple's introductory guide on iOS app development, [Start Developing iOS Apps Today](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/Introduction.html). Experienced developers may want to take a look at the [sample projects](#sample) for more advanced uses of the SDK.
 

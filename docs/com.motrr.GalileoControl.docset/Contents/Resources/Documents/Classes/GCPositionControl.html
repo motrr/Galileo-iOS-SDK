@@ -49,19 +49,19 @@
 	
 	<option value="//api/name/maxAcceleration">&nbsp;&nbsp;&nbsp;&nbsp;maxAcceleration</option>
 	
-	<option value="//api/name/maxVelocity">&nbsp;&nbsp;&nbsp;&nbsp;maxVelocity</option>
+	<option value="//api/name/maxSpeed">&nbsp;&nbsp;&nbsp;&nbsp;maxSpeed</option>
 	
 	<option value="//api/name/minAcceleration">&nbsp;&nbsp;&nbsp;&nbsp;minAcceleration</option>
 	
-	<option value="//api/name/minVelocity">&nbsp;&nbsp;&nbsp;&nbsp;minVelocity</option>
+	<option value="//api/name/minSpeed">&nbsp;&nbsp;&nbsp;&nbsp;minSpeed</option>
 	
 	<option value="//api/name/smallestAngleIncrement">&nbsp;&nbsp;&nbsp;&nbsp;smallestAngleIncrement</option>
+	
+	<option value="//api/name/speed">&nbsp;&nbsp;&nbsp;&nbsp;speed</option>
 	
 	<option value="//api/name/targetPosition">&nbsp;&nbsp;&nbsp;&nbsp;targetPosition</option>
 	
 	<option value="//api/name/torque">&nbsp;&nbsp;&nbsp;&nbsp;torque</option>
-	
-	<option value="//api/name/velocity">&nbsp;&nbsp;&nbsp;&nbsp;velocity</option>
 	
 	
 	
@@ -124,19 +124,19 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxAcceleration">maxAcceleration</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxVelocity">maxVelocity</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxSpeed">maxSpeed</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minAcceleration">minAcceleration</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minVelocity">minVelocity</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minSpeed">minSpeed</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smallestAngleIncrement">smallestAngleIncrement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speed">speed</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/targetPosition">targetPosition</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/torque">torque</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/velocity">velocity</a></span></li>
 	
 </ul></li>
 
@@ -231,19 +231,19 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/velocity">&nbsp;&nbsp;velocity</a></code>
+		<code><a href="#//api/name/speed">&nbsp;&nbsp;speed</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/maxVelocity">&nbsp;&nbsp;maxVelocity</a></code>
+		<code><a href="#//api/name/maxSpeed">&nbsp;&nbsp;maxSpeed</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/minVelocity">&nbsp;&nbsp;minVelocity</a></code>
+		<code><a href="#//api/name/minSpeed">&nbsp;&nbsp;minSpeed</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -365,7 +365,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Acceleration, in degrees per second per second.</p>
+		<p>Acceleration, in degrees per second per second. Positive valued (negative values will be normalised).</p>
 	</div>		
 	
     
@@ -382,9 +382,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>During movement, Galileo will accelerate and decelerate up to and down from the specified velocity at this rate. When modifying this property, be sure that the magitude does not exceed <code>maxAcceleration</code> for correct operation.</p>
-
-<p>It is not advisible to combine very small values of <code>velocity</code> with very large values of <code>acceleration</code>, since this exerts a computational burden on the Galileo and can lead to errors.</p>
+		<p>During movement, Galileo will accelerate and decelerate up to and down from the specified velocity at this rate. When modifying this property, be sure that the magitude remains with interval defined by <code>minAcceleration</code> and <code>maxAcceleration</code>. Illegal values will be normalised to within this range.</p>
 	</div>
 	
 	
@@ -480,7 +478,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Indicates whether the motors should actively hold position whilst stationary.</p>
+		<p>Indicates whether the motors should actively hold position when Galileo is not moving.</p>
 	</div>		
 	
     
@@ -553,18 +551,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/maxVelocity" title="maxVelocity"></a>
-	<h3 class="subsubtitle method-title">maxVelocity</h3>
+	<a name="//api/name/maxSpeed" title="maxSpeed"></a>
+	<h3 class="subsubtitle method-title">maxSpeed</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The maximum velocity Galileo is able to move at, in degrees per second.</p>
+		<p>The maximum speed Galileo is able to move at, in degrees per second.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) double maxVelocity</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) double maxSpeed</code></div>
 
     
 	
@@ -625,18 +623,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/minVelocity" title="minVelocity"></a>
-	<h3 class="subsubtitle method-title">minVelocity</h3>
+	<a name="//api/name/minSpeed" title="minSpeed"></a>
+	<h3 class="subsubtitle method-title">minSpeed</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The minimum velocity Galileo is able to move at, in degrees per second.</p>
+		<p>The minimum speed Galileo is able to move at, in degrees per second.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) double minVelocity</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) double minSpeed</code></div>
 
     
 	
@@ -645,6 +643,11 @@
 	
 	
 	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Small values of <code>speed</code> will result in the estimated position drifting over time during motion. This is due to computational constracaints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.</p></div>
+	</div>
 	
 	
 	
@@ -702,13 +705,54 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/speed" title="speed"></a>
+	<h3 class="subsubtitle method-title">speed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Speed, in degrees per second. Positive valued (negative values will be normalised).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) double speed</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Galileo will attempt to accelerate up to and down from this speed during movement. Galileo will not exceed this speed. When modifying this property, be sure that the magitude remains with interval defined by <code>minSpeed</code> and <code>maxSpeed</code>. Illegal values will be normalised to within this range.</p><div class="warning"><p><strong>Warning:</strong> Small values of <code>speed</code> will result in the estimated position drifting over time during motion. This is due to computational constracaints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GCPositionControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/targetPosition" title="targetPosition"></a>
 	<h3 class="subsubtitle method-title">targetPosition</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The target position, in degress, you wish to set the accessory to.</p>
+		<p>The target position, in degress, the accessory is set to.</p>
 	</div>		
 	
     
@@ -762,49 +806,6 @@
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>A larger torque setting is useful to prevent stalling at greater velocities. Use a smaller torque setting to conserve power during low velocity operation.</p><div class="warning"><p><strong>Warning:</strong> Using a torque setting larger than the default for extended periods may causing heating and damage the motors, especially when <code>holdPositionWhenStationary</code> is set to <code>YES</code>.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GCPositionControl.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/velocity" title="velocity"></a>
-	<h3 class="subsubtitle method-title">velocity</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Velocity, in degrees per second.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) double velocity</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Galileo will attempt to accelerate up to and down from this velocity during movement. Galileo will not exceed this velocity. When modifying this property, be sure that the magitude does not exceed <code>maxVelocity</code> for correct operation.</p>
-
-<p>It is not advisible to combine very small values of <code>velocity</code> with very large values of <code>acceleration</code>, since this exerts a computational burden on the Galileo and can lead to errors.</p>
 	</div>
 	
 	
@@ -877,7 +878,9 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a completion block is provided then it will be executed either when the target is reached or when the command is preempted.</p>
 
-<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p>
+
+<p>  Setting target position using relative control commands will NOT use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on if the target position is greater than or less than the current position.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
 	</div>
 	
 	
@@ -940,7 +943,9 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a delegate is provided then it will be notified either when the target is reached or when the command is preempted.</p>
 
-<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p>
+
+<p>Setting target position using relative control commands will NOT use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on if the target position is greater than or less than the current position.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
 	</div>
 	
 	
@@ -969,11 +974,16 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)resetOriginToCurrentPosition</code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)resetOriginToCurrentPosition</code></div>
 
     
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the reset was sucessful. FALSE if reset failed due to device still in motion.</p>
+	</div>
 	
 	
 	
@@ -1044,7 +1054,9 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a completion block is provided then it will be executed either when the target is reached or when the command is preempted.</p>
 
-<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p>
+
+<p>Setting target position using absolute control commands will use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on the shortest path to the target position.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
 	</div>
 	
 	
@@ -1107,7 +1119,9 @@
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If another method call changes the target position before it has been reached then the previous command will be preempted and the accessory will immediately begin moving towards the new target position. If a delegate is provided then it will be notified either when the target is reached or when the command is preempted.</p>
 
-<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
+<p>If <code>waitUntilStationary</code> is <code>TRUE</code> then the call will block until the target position is reached. If the command is preempted, the call will continue to block until any new target is reached and the accessory is stationary.</p>
+
+<p>  Setting target position using absolute control commands will use modulo arithmetic. Movement will be in either clockwise or anticlockwise direction depensing on the shortest path to the target position.</p><div class="warning"><p><strong>Warning:</strong> You should not call this method from the main thread with <code>waitUntilStationary</code> set to <code>TRUE</code>. This will lock up the device since some accessory events are processed on the main thread.</p></div>
 	</div>
 	
 	
@@ -1139,7 +1153,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Motrr. All rights reserved. (Last updated: 2014-03-27)</span><br />
+						<p><span class="copyright">&copy; 2014 Motrr. All rights reserved. (Last updated: 2014-04-26)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

@@ -158,7 +158,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/setVelocity:</TokenIdentifier>
-			<Abstract type="html">The current velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<Abstract type="html">The current velocity Galileo is moving at, in degrees per second.</Abstract>
 			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double velocity</Declaration>
@@ -170,7 +170,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GCVelocityControl/velocity</TokenIdentifier>
-			<Abstract type="html">The current velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<Abstract type="html">The current velocity Galileo is moving at, in degrees per second.</Abstract>
 			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double velocity</Declaration>
@@ -182,7 +182,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/GCVelocityControl/velocity</TokenIdentifier>
-			<Abstract type="html">The current velocity Galileo is able to move at, in degrees per second.</Abstract>
+			<Abstract type="html">The current velocity Galileo is moving at, in degrees per second.</Abstract>
 			<DeclaredIn>GCVelocityControl.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) double velocity</Declaration>

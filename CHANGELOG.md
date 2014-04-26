@@ -1,3 +1,7 @@
+###0.9.3
+
+Fixed issues with position control. Fixed building issues on i386.
+
 ###0.9.2
 
 Fixed bug when toggling bluetooth on/off.

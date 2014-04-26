@@ -45,7 +45,7 @@
 /// @name Accessing control parameters
 ///---------------------------------------------------------------------------------------
 
-/** The current velocity Galileo is able to move at, in degrees per second.
+/** The current velocity Galileo is moving at, in degrees per second.
  */
 @property (nonatomic, readonly) double velocity;
 
