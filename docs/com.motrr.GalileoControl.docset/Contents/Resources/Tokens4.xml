@@ -133,6 +133,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setCanRunInBackground:</TokenIdentifier>
+			<Abstract type="html">True if Galileo can remain connected whilst the app is in the background.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL canRunInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/canRunInBackground</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/canRunInBackground</TokenIdentifier>
+			<Abstract type="html">True if Galileo can remain connected whilst the app is in the background.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL canRunInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/canRunInBackground</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/canRunInBackground</TokenIdentifier>
+			<Abstract type="html">True if Galileo can remain connected whilst the app is in the background.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL canRunInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/canRunInBackground</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setModelName:</TokenIdentifier>
 			<Abstract type="html">The name of the connected Galileo.</Abstract>
 			<DeclaredIn>GCGalileo.h</DeclaredIn>

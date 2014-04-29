@@ -1,3 +1,10 @@
+###0.9.4
+
+Minor bugfixes and additions.
+
+* Fixed waitUntilStationary flag being ignored in certain cases.
+* Added canRunInBackground flag.
+
 ###0.9.3
 
 Fixed issues with position control. Fixed building issues on i386.
