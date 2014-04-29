@@ -61,15 +61,20 @@
  */
 - (void) disconnect;
 
+/** The model type of the connected Galileo.
+ @discussion This is a human-readable string generated from Galileo's `hardwareVersion` property.
+ */
+@property (nonatomic, readonly) NSString* modelType;
+
 
 ///---------------------------------------------------------------------------------------
 /// @name Acccessing Galileo properties
 ///---------------------------------------------------------------------------------------
 
-/** The model type of the connected Galileo.
- @discussion This is a human-readable string generated from Galileo's `hardwareVersion` property.
+/** True if Galileo can remain connected whilst the app is in the background.
+ @discussion By default this value is false, Galileo will disconnect whenever the app enters background mode (for example, when the user depresses the home button).
  */
-@property (nonatomic, readonly) NSString* modelType;
+@property (nonatomic, readonly) BOOL canRunInBackground;
 
 /** The name of the connected Galileo.
   @discussion For Bluetooth-type Galileo models, this is the name presented to the user when asked to be paired.
