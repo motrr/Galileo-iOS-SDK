@@ -23,7 +23,7 @@ The full index of class references can be viewed on the [GalileoControl](../../i
 
 ### Community
 
-A developer blog and forum will be released shortly, check back soon at our [developer portal](http://dev.motrr.com). Until then feel free to email comments and questions to [dev@motrr.com](mailto:dev@motrr.com).
+For the latest updates check out our developer blog our [developer portal](http://dev.motrr.com). Feel free to email comments and questions to [dev@motrr.com](mailto:dev@motrr.com). If you would like to be notified of SDK updates then you can also send your requests to [dev@motrr.com](mailto:dev@motrr.com).
 
 <a name="sample"/></a>
 ### Sample projects

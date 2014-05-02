@@ -1,3 +1,7 @@
+###0.9.5
+
+Minor bugfixes and documentation edits.
+
 ###0.9.4
 
 Minor bugfixes and additions.

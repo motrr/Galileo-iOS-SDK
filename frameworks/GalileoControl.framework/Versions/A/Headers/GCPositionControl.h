@@ -42,7 +42,7 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
 /** Speed, in degrees per second. Positive valued (negative values will be normalised).
  @discussion Galileo will attempt to accelerate up to and down from this speed during movement. Galileo will not exceed this speed. When modifying this property, be sure that the magitude remains with interval defined by `minSpeed` and `maxSpeed`. Illegal values will be normalised to within this range.
  
-  @warning Small values of `speed` will result in the estimated position drifting over time during motion. This is due to computational constracaints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.
+  @warning Small values of `speed` will result in the estimated position drifting over time during motion. This is due to computational constraints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.
  */
 @property (nonatomic) double speed;
 
@@ -52,7 +52,7 @@ When the value of this property is `YES`, the motors will actively hold a fixed 
 
 /** The minimum speed Galileo is able to move at, in degrees per second.
  
-  @warning Small values of `speed` will result in the estimated position drifting over time during motion. This is due to computational constracaints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.
+  @warning Small values of `speed` will result in the estimated position drifting over time during motion. This is due to computational constraints on the Galileo hardware. Therefore, larger values of speed (above 50.0 degrees/second) are recommended when accurate motion is required. Values below 5.0 degrees/second are liable to produce movement inaccuracies of 5 - 10%.
  */
 @property (nonatomic, readonly) double minSpeed;
 
