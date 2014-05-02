@@ -137,7 +137,7 @@
 			<Abstract type="html">True if Galileo can remain connected whilst the app is in the background.</Abstract>
 			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL canRunInBackground</Declaration>
+			<Declaration>@property (nonatomic) BOOL canRunInBackground</Declaration>
 			
 			
 			<Anchor>//api/name/canRunInBackground</Anchor>
@@ -149,7 +149,7 @@
 			<Abstract type="html">True if Galileo can remain connected whilst the app is in the background.</Abstract>
 			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL canRunInBackground</Declaration>
+			<Declaration>@property (nonatomic) BOOL canRunInBackground</Declaration>
 			
 			
 			<Anchor>//api/name/canRunInBackground</Anchor>
@@ -161,7 +161,7 @@
 			<Abstract type="html">True if Galileo can remain connected whilst the app is in the background.</Abstract>
 			<DeclaredIn>GCGalileo.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL canRunInBackground</Declaration>
+			<Declaration>@property (nonatomic) BOOL canRunInBackground</Declaration>
 			
 			
 			<Anchor>//api/name/canRunInBackground</Anchor>
