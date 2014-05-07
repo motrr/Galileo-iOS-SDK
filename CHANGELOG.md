@@ -1,3 +1,7 @@
+###0.9.6
+
+Fixed issue when building for iOS 6.
+
 ###0.9.5
 
 Minor bugfixes and documentation edits.
