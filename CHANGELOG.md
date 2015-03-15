@@ -1,3 +1,15 @@
+###1.0.1
+
+Fixed missing strings in firmware update alert flow text.
+
+#1.0
+
+Updated for iOS 8 and built using Xcode 6
+
+* Localisation now updated to take advantage of new Xcode 6 tools
+* Fixed issue with simulating on 64-bit platforms
+* Backlog of various issue fixes
+
 ###0.9.6
 
 Fixed issue when building for iOS 6.

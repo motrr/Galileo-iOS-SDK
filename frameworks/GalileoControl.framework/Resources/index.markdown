@@ -1,1 +1,0 @@
-This is the developer reference for the GalileoControl iOS framework. For help installing and configuring the framework read the [Galileo iOS Quick Start Guide](<docs/src/Galileo%20iOS%20Quick%20Start%20Guide.html>).
