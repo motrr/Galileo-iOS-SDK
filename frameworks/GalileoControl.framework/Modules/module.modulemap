@@ -1,0 +1,6 @@
+framework module GalileoControl {
+  umbrella header "GalileoControl.h"
+
+  export *
+  module * { export * }
+}

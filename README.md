@@ -2,6 +2,7 @@
 
 Welcome to the Galileo iOS SDK. Here you can find resources for developing Galileo compatible apps on the iOS platform. For other platforms and to access our developer blog and forum please visit the motrr developer portal at http://dev.motrr.com.
 
+
 ## Download the framework
 
 The GalileoControl framework can be downloaded manually in either [.zip](https://github.com/motrr/Galileo-iOS-SDK/zipball/master) or [.tar.gz](https://github.com/motrr/Galileo-iOS-SDK/tarball/master) format. Just extract the folder to your Xcode project directory.

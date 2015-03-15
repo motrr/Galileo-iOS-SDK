@@ -133,6 +133,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setShouldAutoConnectToKnownGalileo:</TokenIdentifier>
+			<Abstract type="html">True if Galileo will attempt to auto-connect (without user action) to previously known Galileo devices.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldAutoConnectToKnownGalileo</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutoConnectToKnownGalileo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/shouldAutoConnectToKnownGalileo</TokenIdentifier>
+			<Abstract type="html">True if Galileo will attempt to auto-connect (without user action) to previously known Galileo devices.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldAutoConnectToKnownGalileo</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutoConnectToKnownGalileo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GCGalileo/shouldAutoConnectToKnownGalileo</TokenIdentifier>
+			<Abstract type="html">True if Galileo will attempt to auto-connect (without user action) to previously known Galileo devices.</Abstract>
+			<DeclaredIn>GCGalileo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldAutoConnectToKnownGalileo</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutoConnectToKnownGalileo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GCGalileo/setCanRunInBackground:</TokenIdentifier>
 			<Abstract type="html">True if Galileo can remain connected whilst the app is in the background.</Abstract>
 			<DeclaredIn>GCGalileo.h</DeclaredIn>

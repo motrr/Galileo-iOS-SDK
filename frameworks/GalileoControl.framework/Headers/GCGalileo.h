@@ -71,8 +71,13 @@
 /// @name Acccessing Galileo properties
 ///---------------------------------------------------------------------------------------
 
+/** True if Galileo will attempt to auto-connect (without user action) to previously known Galileo devices.
+ @discussion By default this value is true. If your app specifically requires disconnecting or reconnecting to/from Galileo, or if your app is used in an environment with multiple Galileos, you may wish to set this value to false. Note that this only effects Bluetooth devices.
+ */
+@property (nonatomic) BOOL shouldAutoConnectToKnownGalileo;
+
 /** True if Galileo can remain connected whilst the app is in the background.
- @discussion By default this value is false, Galileo will disconnect whenever the app enters background mode (for example, when the user depresses the home button).
+ @discussion By default this value is false, Galileo will disconnect whenever the app enters background mode (for example, when the user depresses the home button). Developers are strongly encouraged not to change this value since it is a source of confusion for users, who have come to expect Galileo to disconnect when they minimise the app. However, for very specific app use cases this behavaour may be required.
  */
 @property (nonatomic) BOOL canRunInBackground;
 

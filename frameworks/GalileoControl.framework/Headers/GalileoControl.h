@@ -1,8 +1,16 @@
-//  Created by Chris Harding on 1/17/13.
-//  Copyright (c) 2013 MOTRR LLC. All rights reserved.
+//  Created by Chris Harding on 02/10/2014.
+//  Copyright (c) 2014 Chris Harding. All rights reserved.
 //
-/** This header is a convenience header for importing all the Galileo public interface classes.
- */
+
+#import <UIKit/UIKit.h>
+
+//! Project version number for GalileoControl.
+FOUNDATION_EXPORT double GalileoControlVersionNumber;
+
+//! Project version string for GalileoControl.
+FOUNDATION_EXPORT const unsigned char GalileoControlVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <GalileoControl/PublicHeader.h>
 
 #import "GCCommon.h"
 //
