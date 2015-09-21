@@ -1,3 +1,8 @@
+###1.0.2
+Built using XCode 7
+
+* Fixed crash on iOS 9
+
 ###1.0.1
 
 Fixed missing strings in firmware update alert flow text.
