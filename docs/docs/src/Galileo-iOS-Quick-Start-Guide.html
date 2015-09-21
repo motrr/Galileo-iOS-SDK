@@ -1,29 +1,45 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>Galileo iOS Quick Start Guide Document</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../../css/stylesPrint.css" />	
-		<meta name="generator" content="appledoc 2.2 (build 961)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../../index.html">GalileoControl </a></h1>
-				<a id="developerHome" href="../../index.html">Motrr</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>Galileo iOS Quick Start Guide Document</title>
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode" id="pageTitleHeader">Galileo iOS Quick Start Guide Document</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar"></ul>
-		</header>
-		<article>
-			<a title="Galileo iOS Quick Start Guide Document" name="top"></a>
-			<div id="overview_contents" role="main">
-				<div id="container">	
+			<h1 id="library-title">
+				<a href="../../index.html">GalileoControl </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../../index.html">Motrr</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../../index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview-contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Galileo iOS Quick Start Guide Document</h1>
+
 					<p>Welcome to the Galileo iOS Quick Start Guide for developers. The following information should help you get started with building Galileo compatible applications on the iOS platform. The examples in this guide were built using Xcode 5.1 and have been tested with iOS SDK 7.0 and later. Comments, corrections and suggestions should be sent to <a href="mailto:dev@motrr.com">dev@motrr.com</a>.</p>
 
 <p>First time developers should read through Apple&rsquo;s introductory guide on iOS app development, <a href="http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/Introduction.html">Start Developing iOS Apps Today</a>. Experienced developers may want to take a look at the <a href="#sample">sample projects</a> for more advanced uses of the SDK.</p>
@@ -46,9 +62,9 @@
 
 <ul>
 <li><a href="../../Classes/GCGalileo.html"><code>GCGalileo</code></a> - Defines the gateway singleton object for connecting to Galileo and accessing motion controllers.</li>
-<li><a href="../../Protocols/GCGalileoDelegate.html"><code>GCGalileoDelegate</code></a> - Delegate protocol for notification of connection and disconnection events.</li>
+<li><code>GCGalileoDelegate</code> - Delegate protocol for notification of connection and disconnection events.</li>
 <li><a href="../../Classes/GCPositionControl.html"><code>GCPositionControl</code></a> - Control Galileo by moving to a specified position.</li>
-<li><a href="[GCVelocityControl](../../Classes/GCVelocityControl.html"><code>GCVelocityControl</code></a>) - Control Galileo by setting angular velocity.</li>
+<li><a href="../../Classes/GCVelocityControl.html"><code>GCVelocityControl</code></a> - Control Galileo by setting angular velocity.</li>
 </ul>
 
 
@@ -226,10 +242,10 @@
 
 <h2>Moving Galileo</h2>
 
-<p>Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the <a href="../../Classes/GCGalileo.html"><code>GCGalileo</code></a> shared instance.</p>
+<p>Galileo can be controlled with two distinct modes: position control and velocity control. Both can be accessed using methods on the <code>GCGalileo</code> shared instance.</p>
 
 <ul>
-<li><p>An instance of <a href="../../Classes/GCPositionControl.html"><code>GCPositionControl</code></a> is obtained by calling <code>positionControlForAxis:</code>. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.</p>
+<li><p>An instance of <code>GCPositionControl</code> is obtained by calling <code>positionControlForAxis:</code>. A distinct position control instance exists for each axis the connected Galileo supports. The following delegate implementation would pan Galileo clockwise by 90 degrees as soon as a connection is established.</p>
 
 <pre><code> - (void) galileoDidConnect
  { 
@@ -237,7 +253,7 @@
      [panPositionControl incrementTargetPosition:90.0 notifyDelegate:nil waitUntilStationary:NO];
  }
 </code></pre></li>
-<li><p>Velocity control is performed in a similar fasion, using an instance of <code>GCVelocityControl</code>. The following example starts Galileo rotating the phone around it&rsquo;s tilt axis at 100 degrees per second.</p>
+<li><p>Velocity control is performed in a similar fasion, using an instance of <a href="../../Classes/GCVelocityControl.html"><code>GCVelocityControl</code></a>. The following example starts Galileo rotating the phone around it&rsquo;s tilt axis at 100 degrees per second.</p>
 
 <pre><code> GCVelocityControl* tiltVelocityControl = [[GCGalileo sharedGalileo] velocityControlForAxis:GCControlAxisTilt];
  [tiltVelocityControl setTargetVelocity:100.0];
@@ -256,18 +272,22 @@
 </code></pre></li>
 </ul>
 
-				</div>
-				<div id="footer">
-					<hr />
-					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 Motrr. All rights reserved. (Last updated: 2015-03-15)</span><br />
-						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
-						
-					
-					</div>
-				</div>
+
+					<footer>
+						<div class="footer-copyright">
+							
+							<p class="copyright">Copyright &copy; 2015 Motrr. All rights reserved. Updated: 2015-09-21</p>
+							
+							
+							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+							
+						</div>
+					</footer>
+				</main>
 			</div>
-		</article>
-	</body>
+		</div>
+	</article>
+
+	<script src="../../js/script.js"></script>
+</body>
 </html>

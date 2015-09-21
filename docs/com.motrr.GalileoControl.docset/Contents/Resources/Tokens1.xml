@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="docs/src/Galileo iOS Quick Start Guide.html">
+	<File path="docs/src/Galileo-iOS-Quick-Start-Guide.html">
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/doc/Galileo iOS Quick Start Guide</TokenIdentifier>
@@ -12,6 +12,7 @@
 		</Token>
 		
 		
+        
         
 	</File>
 </Tokens>
